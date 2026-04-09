@@ -1,0 +1,37 @@
+{
+  "name": "@reapi/dstr",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@reapi/shared": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.2",
+    "@tanstack/react-query": "^5.45.1",
+    "@tanstack/react-router": "^1.34.5",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^4.2.1",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.11",
+    "react-datepicker": "^4.8.0",
+    "react-select": "*",
+    "date-fns": "*"
+  },
+  "devDependencies": {
+    "@types/react-datepicker": "^4.4.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/leaflet": "^1.9.12",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1"
+  }
+}

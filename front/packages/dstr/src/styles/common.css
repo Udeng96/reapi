@@ -1,0 +1,49 @@
+/*dashboard commmon style*/
+html,
+body,
+.hwaseong{
+  margin: 0px;
+  padding: 0px;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+.dashWrap {
+  width: 100%;
+  height: 1080px;
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+  background-color: #1c3947;
+}
+
+
+.hams.dashWrap {
+  width: 100%;
+  height: 1080px;
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+  background-color: #15161f;
+}
+
+
+.monitor.dashWrap {
+  width: 100%;
+  height: 1080px;
+  margin: 0 auto;
+  max-width: 1920px;
+  position: relative;
+  background-color: #15161f;
+}
+
+.hams .loading_img {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.4) url("/images/dark/page/img/hams/loading/hwaseong_loading.png") no-repeat center;
+
+}

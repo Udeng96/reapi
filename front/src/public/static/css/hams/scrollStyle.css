@@ -1,0 +1,19 @@
+/*scroll style*/
+ul.nav_menu_list::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+
+ul.nav_menu_list::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 1.5px;
+}
+
+ul.nav_menu_list::-webkit-scrollbar-thumb {
+  background-color: #262937;
+  border-radius: 1.5px;
+}
+
+ul.nav_menu_list::-webkit-scrollbar-thumb:hover {
+  background-color: #303547;
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "myCctvGroupId": "b609c9248d204162bd3a8b9bfc349d5d",
+    "myCctvGroupNm": "처음등록합니다",
+    "userId": "ddLRSv4LQ74abYtsoDQCZD",
+    "userNm": "강성진",
+    "regDtm": "20220426135428",
+    "cctvs": [
+      {
+        "myCctvGroupCctvMappId": "23e825d0337a447fa0327557b9ba8430",
+        "myCctvGroupId": "b609c9248d204162bd3a8b9bfc349d5d",
+        "cctvId": "cctvId001",
+        "cctvNm": "첫번째 아이디",
+        "lat": 37.0002,
+        "lng": 127.0002
+      },
+      {
+        "myCctvGroupCctvMappId": "93e4f1e4632c49dda8d5cff0af3636e4",
+        "myCctvGroupId": "b609c9248d204162bd3a8b9bfc349d5d",
+        "cctvId": "cctvId001",
+        "cctvNm": "첫번째 아이디",
+        "lat": 37.0002,
+        "lng": 127.0002
+      }
+    ]
+  }
+]

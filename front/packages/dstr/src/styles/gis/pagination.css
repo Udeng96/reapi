@@ -1,0 +1,125 @@
+/*pagination style*/
+.paging_wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 24px;
+}
+
+.paging_wrap ul {
+    display: flex;
+}
+
+.paging_wrap ul li {
+    float: left;
+    margin: 0 2px;
+}
+
+.paging_wrap ul li a {
+    width: 20px;
+    height: 20px;
+    font-family: "NotoSansCJKR";
+    font-size: 10px;
+    border: solid 1px #3a3d4a;
+    background-color: #303240;
+    color: #e1e2e3;
+    float: left;
+    line-height: 1.6;
+    padding-top: 2px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all .25s;
+}
+
+.paging_wrap ul li a:hover {
+    color: #ff6f26;
+}
+
+.paging_wrap ul li a:active,
+.paging_wrap ul li a:focus {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24);
+    border: solid 1px #943f1b;
+    background-color: #472318;
+    color: #f7f7f7;
+}
+
+.paging_wrap ul li a.active {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24);
+    border: solid 1px #943f1b;
+    background-color: #472318;
+    color: #f7f7f7;
+}
+
+
+.paging_wrap ul li a.btn_foremost:active,
+.paging_wrap ul li a.btn_foremost:focus,
+.paging_wrap ul li a.btn_prev:active,
+.paging_wrap ul li a.btn_prev:focus,
+.paging_wrap ul li a.btn_next:active,
+.paging_wrap ul li a.btn_next:focus,
+.paging_wrap ul li a.btn_last:active,
+.paging_wrap ul li a.btn_last:focus {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.paging_wrap ul li .btn_prev {
+    background: url("/images/dark/page/btn/btn_pagination_previous_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_prev:hover {
+    background: url("/images/dark/page/btn/btn_pagination_previous_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_prev.dimmed {
+    background: url("/images/dark/page/btn/btn_pagination_previous_dimmed.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_foremost {
+    background: url("/images/dark/page/btn/btn_pagination_theForemost_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_foremost:hover {
+    background: url("/images/dark/page/btn/btn_pagination_theForemost_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_foremost.dimmed {
+    background: url("/images/dark/page/btn/btn_pagination_theForemost_dimmed.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_next {
+    background: url("/images/dark/page/btn/btn_pagination_next_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_next:hover {
+    background: url("/images/dark/page/btn/btn_pagination_next_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_next.dimmed {
+    background: url("/images/dark/page/btn/btn_pagination_next_dimmed.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_last {
+    background: url("/images/dark/page/btn/btn_pagination_theLast_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_last:hover {
+    background: url("/images/dark/page/btn/btn_pagination_theLast_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_last.dimmed {
+    background: url("/images/dark/page/btn/btn_pagination_theLast_dimmed.png") no-repeat;
+    background-size: 100%;
+}

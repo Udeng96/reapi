@@ -1,0 +1,9 @@
+{
+  "resultType": "success",
+  "message": "성공적으로 완료하였습니다.",
+  "data": {
+    "morningSt": "normal",
+    "lunchSt": "normal",
+    "eveningSt": "normal"
+  }
+}

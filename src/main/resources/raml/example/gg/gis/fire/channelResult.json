@@ -1,0 +1,10 @@
+[
+  {
+    "channelId": "카메라 ID",
+    "station": "관할서",
+    "car": "차량종류",
+    "carnum": "차량번호",
+    "connect": "접속유무",
+    "rtspAddr": "영상접속 RTSP URL"
+  }
+]

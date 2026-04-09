@@ -1,0 +1,32 @@
+[
+  {
+    "facId": "테스트 시설물 id2",
+    "facNm": "테스트 시설물2",
+    "addr": "시설물 위치2",
+    "lat": 37.222222,
+    "lng": 127.222222,
+    "clfyCd": "분류코드",
+    "clfyNm" : "분류 명칭",
+    "useYn": true,
+    "state": "ON",
+    "updDtm": "20220302142822",
+    "data": null,
+    "locationCd" : "41222233",
+    "locationNm" : "지자체 명칭"
+  },
+  {
+    "facId": "테스트 시설물 id3",
+    "facNm": "테스트 시설물3",
+    "addr": "시설물 위치3",
+    "lat": 37.222222,
+    "lng": 127.222222,
+    "clfyCd": "분류코드",
+    "clfyNm" : "분류 명칭",
+    "useYn": true,
+    "state": "ON",
+    "updDtm": "20220302142822",
+    "data": null,
+    "locationCd" : "41222233",
+    "locationNm" : "지자체 명칭"
+  }
+]

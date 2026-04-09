@@ -1,0 +1,118 @@
+/*scroll style*/
+.search_list_body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+.search_list_body::-webkit-scrollbar-track {
+  background-color: rgba(235, 242, 245, 0.1);
+  border-radius: 1.5px;
+}
+
+.search_list_body::-webkit-scrollbar-thumb {
+  background-color: #585b69;
+  border-radius: 1.5px;
+}
+
+.search_list_body::-webkit-scrollbar-thumb:hover {
+  background-color: #6d728a;
+}
+
+.detail_info_value::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+
+.detail_info_value::-webkit-scrollbar-track {
+  background-color: #353642;
+  border-radius: 2px;
+}
+
+.detail_info_value::-webkit-scrollbar-thumb {
+  background-color: #585b69;
+  border-radius: 2px;
+}
+
+.detail_info_value::-webkit-scrollbar-thumb:hover {
+  background-color: #6d728a;
+}
+
+.search_list_area::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+
+.search_list_area::-webkit-scrollbar-track {
+  background-color: rgba(235, 242, 245, 0.1);
+  border-radius: 2px;
+}
+
+.search_list_area::-webkit-scrollbar-thumb {
+  background-color: #747a8a;
+  border-radius: 2px;
+}
+
+.search_list_area::-webkit-scrollbar-thumb:hover {
+  background-color: #9197a8;
+}
+
+.event_select_list::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+
+.event_select_list::-webkit-scrollbar-track {
+  background-color: rgba(235, 242, 245, 0.1);
+  border-radius: 2px;
+}
+
+.event_select_list::-webkit-scrollbar-thumb {
+  background-color: #585b69;
+  border-radius: 2px;
+}
+
+.event_select_list::-webkit-scrollbar-thumb:hover {
+  background-color: #747a8a;
+}
+
+ul.live_list_body::-webkit-scrollbar {
+  background-color: #353642;
+  width: 3px;
+}
+
+ul.live_list_body::-webkit-scrollbar-track {
+  background-color: #353642;
+  border-radius: 1.5px;
+}
+
+ul.live_list_body::-webkit-scrollbar-thumb {
+  background-color: #585b69;
+  border-radius: 1.5px;
+}
+
+ul.live_list_body::-webkit-scrollbar-thumb:hover {
+  background-color: #6d728a;
+}
+
+
+
+
+ul.cluster_list::-webkit-scrollbar {
+  background-color: #353642;
+  width: 3px;
+}
+
+ul.cluster_list::-webkit-scrollbar-track {
+  background-color: #353642;
+  border-radius: 1.5px;
+}
+
+ul.cluster_list::-webkit-scrollbar-thumb {
+  background-color: #585b69;
+  border-radius: 1.5px;
+}
+
+ul.cluster_list::-webkit-scrollbar-thumb:hover {
+  background-color: #6d728a;
+}
+

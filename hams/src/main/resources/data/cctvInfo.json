@@ -1,0 +1,16 @@
+[
+    { "cctvId" : "cctv001", "cctvName" : "남양국사", "hamsName" : "남양국사"},
+    { "cctvId" : "cctv002", "cctvName" : "동탄1지구국사1", "hamsName" : "BBS#1"},
+    { "cctvId" : "cctv003", "cctvName" : "동탄1지구국사2", "hamsName" : "BBS#2"},
+    { "cctvId" : "cctv004", "cctvName" : "동탄1지구국사3", "hamsName" : "BBS#3"},
+    { "cctvId" : "cctv005", "cctvName" : "동탄2지구국사", "hamsName" : "동탄2지구-1국사"},
+    { "cctvId" : "cctv006", "cctvName" : "동탄2지구국사2내부", "hamsName" : "동탄2지구-2국사"},
+    { "cctvId" : "cctv007", "cctvName" : "동탄2지구국사2외부", "hamsName" : "동탄2지구-2국사"},
+    { "cctvId" : "cctv008", "cctvName" : "동탄2지구국사3내부", "hamsName" : "동탄2지구-3국사"},
+    { "cctvId" : "cctv009", "cctvName" : "동탄2지구국사3외부", "hamsName" : "동탄2지구-3국사"},
+    { "cctvId" : "cctv010", "cctvName" : "봉담국사1", "hamsName" : "봉담국사(비봉,태안)"},
+    { "cctvId" : "cctv011", "cctvName" : "봉담국사2", "hamsName" : "봉담국사(비봉,태안)"},
+    { "cctvId" : "cctv012", "cctvName" : "봉담국사3", "hamsName" : "봉담국사(비봉,태안)"},
+    { "cctvId" : "cctv019", "cctvName" : "전곡산단국사", "hamsName" : "전곡산단"},
+    { "cctvId" : "cctv020", "cctvName" : "향남국사", "hamsName" : "향남2지구"}
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id" : "aaa11",
+    "userId" : "gae1",
+    "userNm" : "아무개1",
+    "userDept" : "재난안전과",
+    "userDtm" : "20220817131415",
+    "lat" : 37.202882,
+    "lng" : 126.79325,
+    "mbChk" : 3,
+    "mbUrl" :""
+  },
+  {
+    "id" : "aaa22",
+    "userId" : "mu2",
+    "userNm" : "아무개2",
+    "userDept" : "재난안전과",
+    "userDtm" : "20220816131415",
+    "lat" : 37.200396,
+    "lng" : 126.804799,
+    "mbChk" : 3,
+    "mbUrl" :""
+  },
+  {
+    "id" : "aaa33",
+    "userId" : "mu3",
+    "userNm" : "아무개3",
+    "userDept" : "재난안전과",
+    "userDtm" : "20220816171415",
+    "lat" : 37.137437,
+    "lng" : 126.766797,
+    "mbChk" : 3,
+    "mbUrl" :""
+  }
+]

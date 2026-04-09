@@ -1,0 +1,211 @@
+/*modalPopup style*/
+@keyframes fadeinbg {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+@-moz-keyframes fadeinbg {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes fadeinbg {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeinbg {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20%);
+    -moz-transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  to {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.gis.modal_popup {
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: none;
+
+  animation: fadeinbg 0.3s;
+  -moz-animation: fadeinbg 0.3s;
+  /* Firefox */
+  -webkit-animation: fadeinbg 0.3s;
+  /* Safari and Chrome */
+  -o-animation: fadeinbg 0.3s;
+  /* Opera */
+}
+
+.gis.modal_popup .modal_popup_frame {
+  width: 950px;
+  height: 879px;
+  border: solid 1px #2d2f3d;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 5px 4px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 4px 0 rgba(0, 0, 0, 0.09);
+  background-color: rgba(26, 29, 31, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 3001;
+
+  animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s;
+  /* Firefox */
+  -webkit-animation: fadein 0.3s;
+  /* Safari and Chrome */
+  -o-animation: fadein 0.3s;
+  /* Opera */
+}
+
+.gis.modal_popup .modal_popup_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  padding-left: 24px;
+  padding-right: 21.5px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  background-color: #303140;
+}
+
+.gis.modal_popup .modal_popup_header .popup_title {
+  font-family: "NotoSansCJKM";
+  font-size: 22px;
+  letter-spacing: -0.55px;
+  text-align: left;
+  color: #f5f8ff;
+  position: relative;
+  padding-left: 32px;
+}
+
+.gis.modal_popup .modal_popup_header .popup_title::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url("/images/dark/page/icon/icon_eventTab_pop_header.png") no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.gis.modal_popup .modal_popup_header .btn_popup_close {
+  width: 28px;
+  height: 28px;
+  background: url("/images/dark/page/btn/btn_eventTab_historyPop_close_normal.png") no-repeat;
+  margin-top: 1px;
+}
+
+.gis.modal_popup .modal_popup_header .btn_popup_close:hover {
+  background: url("/images/dark/page/btn/btn_eventTab_historyPop_close_hover.png") no-repeat;
+}
+
+.gis.modal_popup .modal_popup_body {
+  width: 100%;
+  height: calc(100% - 60px);
+  position: relative;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  background-color: #0e0e17;
+}

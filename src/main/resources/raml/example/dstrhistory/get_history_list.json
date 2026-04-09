@@ -1,0 +1,41 @@
+[
+  {
+    "dstrHistId": "history_6HkJcHSy4jC8d6~ckR5LSC",
+    "dstrGroupId": "group_7G5vr9dM4R~bWv~WU3cpBd",
+    "dstrHistTitle": "재난이력02",
+    "dstrHistCont": "내용02",
+    "deadCount": 7,
+    "injuredCount": 3,
+    "missingCount": 100,
+    "damageAmount": "10억 원",
+    "occurDate": "202010071626216",
+    "regDate": "202010071626423",
+    "regUser": "김영희"
+  },
+  {
+    "dstrHistId": "history_bRQWQPSVQHH9E5Gc8BMtNe",
+    "dstrGroupId": "group_1T5HYEAYQds9qfxpbRUPIz",
+    "dstrHistTitle": "재난이력03",
+    "dstrHistCont": "내용03",
+    "deadCount": 130,
+    "injuredCount": 30,
+    "missingCount": 27,
+    "damageAmount": "20억 원",
+    "occurDate": "202010081626123",
+    "regDate": "202010081626421",
+    "regUser": "김영희"
+  },
+  {
+    "dstrHistId": "history_cvy0IkjA4go9Pp5mNuiAId",
+    "dstrGroupId": "group_7G5vr9dM4R~bWv~WU3cpBd",
+    "dstrHistTitle": "재난이력01",
+    "dstrHistCont": "내용04",
+    "deadCount": 51,
+    "injuredCount": 69,
+    "missingCount": 70,
+    "damageAmount": "30억 원",
+    "occurDate": "202010091626415",
+    "regDate": "202010091624124",
+    "regUser": "홍길동"
+  }
+]

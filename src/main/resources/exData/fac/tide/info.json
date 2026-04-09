@@ -1,0 +1,20 @@
+{
+  "facId" : "고조위험 시설물 id",
+  "facNm" : "고조위험 시설물",
+  "addr" : "시설물 위치",
+  "lat" : 37.398920,
+  "lng" : 127.095526,
+  "type" : "tide",
+  "useYn" : true,
+  "state" : "ON",
+  "updDtm" : "20220302142822",
+  "data" : {
+    "date": "20220302151710",
+    "interest": 100,
+    "caution": 100,
+    "alertness": 100,
+    "danger": 100,
+    "preValue": 100,
+    "realValue": 100
+  }
+}

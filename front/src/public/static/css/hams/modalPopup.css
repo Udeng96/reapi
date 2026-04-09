@@ -1,0 +1,80 @@
+/*modalPopup style*/
+.hams.modal_popup {
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3002;
+  display: none;
+}
+
+.hams.modal_popup .modal_popup_frame {
+  border-radius: 16px;
+  border: solid 1px #2d2f3d;
+  background-color: #171821;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.hams.modal_popup .modal_popup_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 72px;
+  padding: 0 22px;
+  position: relative;
+}
+
+.hams.modal_popup .modal_popup_header .popup_title {
+  font-family: "NotoSansCJKM";
+  font-size: 22px;
+  letter-spacing: -0.55px;
+  text-align: left;
+  color: #f5f8ff;
+  position: relative;
+  padding-left: 32px;
+}
+
+.hams.modal_popup .modal_popup_header .popup_title::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url("../../images/dark/page/icon/icon_eventTab_pop_header.png") no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.hams.modal_popup .modal_popup_header .btn_popup_close {
+  width: 28px;
+  height: 28px;
+  background: url("../../images/dark/page/btn/hams/btn_pop_close_normal.png") no-repeat;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.hams.modal_popup .modal_popup_header .btn_popup_close:hover {
+  background: url("../../images/dark/page/btn/hams/btn_pop_close_hover.png") no-repeat;
+}
+
+.hams.modal_popup .modal_popup_header .btn_popup_close:active {
+  background: url("../../images/dark/page/btn/hams/btn_pop_close_click.png") no-repeat;
+}
+
+.hams.modal_popup .modal_popup_body {
+  width: 100%;
+  height: calc(100% - 72px);
+  position: relative;
+}

@@ -1,0 +1,137 @@
+{
+  "resultType": "success",
+  "message": "정상처리 되었습니다.",
+  "data": {
+    "city": {
+      "locationName": "seoul",
+      "khaiValue": "normal"
+    },
+    "region": [
+      {
+        "locationName": "jongno",
+        "khaiValue": "normal",
+        "esri_pk": 22
+      },
+      {
+        "locationName": "junggu",
+        "khaiValue": "normal",
+        "esri_pk": 23
+      },
+      {
+        "locationName": "yongsan",
+        "khaiValue": "normal",
+        "esri_pk": 1
+      },
+      {
+        "locationName": "sungdong",
+        "khaiValue": "good",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gwangjin",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "dongdaemun",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "jungnang",
+        "khaiValue": "good",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "seongbuk",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangbuk",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "dobong",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "nowon",
+        "khaiValue": "good",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "eunpyeong",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "seodaemun",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "mapo",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "yangcheon",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangseo",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "guro",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "geumcheon",
+        "khaiValue": "good",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "yeongdeungpo",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "dongjak",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gwanak",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "seocho",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangnam",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "songpa",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangdong",
+        "khaiValue": "normal",
+        "esri_pk": 10
+      }
+    ]
+  }
+}

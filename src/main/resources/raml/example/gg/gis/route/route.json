@@ -1,0 +1,26 @@
+{
+  "routeId": "route_6CYwWz3J4ht83D2Ys1ztoh",
+  "routeNm": "사용자1의 경로",
+  "userId" : "nfjngjnwjofe",
+  "userNm": "작성자",
+  "regDtm": "20220321164112",
+  "maintenanceTime" : 1,
+  "locations" : [
+    {
+      "locId": "edfc7f343cb248649d291492e4f8ec35",
+      "routeId": "0716c859e8504e3eb97b3f138d5f47fe",
+      "lon": "123.1",
+      "lat": "37.1",
+      "addr": "ansj 변경",
+      "index": 1
+    },
+    {
+      "locId": "70996bc5eebe4c96999704b6e488ee90",
+      "routeId": "0716c859e8504e3eb97b3f138d5f47fe",
+      "lon": "123.2",
+      "lat": "37.2",
+      "addr": "ansj 변경",
+      "index": 2
+    }
+  ]
+}

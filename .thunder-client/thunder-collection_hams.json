@@ -1,0 +1,63 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "HAMS - 무인국사",
+  "dateExported": "2026-03-30",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "r-hams-list",
+      "colId": "",
+      "containerId": "",
+      "name": "무인국사 목록 조회",
+      "url": "http://localhost:30002/api/hams/api",
+      "method": "GET",
+      "sortNum": 10000
+    },
+    {
+      "_id": "r-hams-detail",
+      "colId": "",
+      "containerId": "",
+      "name": "무인국사 단건 조회",
+      "url": "http://localhost:30002/api/hams/api/{id}",
+      "method": "GET",
+      "sortNum": 10100
+    },
+    {
+      "_id": "r-hams-cctv",
+      "colId": "",
+      "containerId": "",
+      "name": "CCTV 목록",
+      "url": "http://localhost:30002/api/hams/api/cctv?hamsName=test",
+      "method": "GET",
+      "sortNum": 10200
+    },
+    {
+      "_id": "r-hams-lock",
+      "colId": "",
+      "containerId": "",
+      "name": "도어 잠금",
+      "url": "http://localhost:30002/api/hams/api/{id}/lock?target=1",
+      "method": "POST",
+      "sortNum": 10300
+    },
+    {
+      "_id": "r-hams-unlock",
+      "colId": "",
+      "containerId": "",
+      "name": "도어 해제",
+      "url": "http://localhost:30002/api/hams/api/{id}/unlock?target=1",
+      "method": "POST",
+      "sortNum": 10400
+    },
+    {
+      "_id": "r-hams-stat",
+      "colId": "",
+      "containerId": "",
+      "name": "통계 조회",
+      "url": "http://localhost:30002/api/hams/api/{id}/stat?doorType=1&frontBack=1&dateType=M&startDtm=20250101&endDtm=20251231",
+      "method": "GET",
+      "sortNum": 10500
+    }
+  ]
+}

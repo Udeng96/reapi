@@ -1,0 +1,23 @@
+[
+  {
+    "managerMappId": "manager_3rxmc7RZkU6bUdg05lKrPj",
+    "dstrHistId": "history_cvy0IkjA4go9Pp5mNuiAId",
+    "managerContact": "010-1111-2222",
+    "managerName": "홍길동",
+    "dptId": "86Vw3I20AMmbVGpL8vVpy3"
+  },
+  {
+    "managerMappId": "manager_7jdDN7NQQLp9glj693ZwDQ",
+    "dstrHistId": "history_cvy0IkjA4go9Pp5mNuiAId",
+    "managerContact": "010-2222-3333",
+    "managerName": "김지나",
+    "dptId": "86Vw3I20AMmbVGpL8vVab4"
+  },
+  {
+    "managerMappId": "manager_aG3AchKcAwQbdKcU8aPCds",
+    "dstrHistId": "history_6HkJcHSy4jC8d6~ckR5LSC",
+    "managerContact": "010-3333-4444",
+    "managerName": "강석희",
+    "dptId": "78Vw3I20AMmbVGpL8vVzy4"
+  }
+]

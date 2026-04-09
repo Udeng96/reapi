@@ -1,0 +1,20 @@
+[
+  {
+    "groupMappId": "cctv_8y5aIxhY4wP9YY1W1ydN3~",
+    "cctvGroupId": "cctvGroup_5WWtMgcF4XZ9k-H8~rtzki",
+    "cctvId": "cctv_gw_001",
+    "cctvName": "구월동001"
+  },
+  {
+    "groupMappId": "cctv_7HmuUwjUAQo99XQkobAG05",
+    "cctvGroupId": "cctvGroup_5WWtMgcF4XZ9k-H8~rtzki",
+    "cctvId": "cctv_gw_002",
+    "cctvName": "구월동002"
+  },
+  {
+    "groupMappId": "cctv_5HWAFZIY4lp8TDhMoFPobV",
+    "cctvGroupId": "cctvGroup_5WWtMgcF4XZ9k-H8~rtzki",
+    "cctvId": "cctv_gw_003",
+    "cctvName": "구월동003"
+  }
+]

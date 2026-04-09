@@ -1,0 +1,143 @@
+server:
+  servlet:
+    context-path: /api
+  port: 22222
+
+logging:
+  config: ${API_HOME}/logback.xml
+
+external:
+  url:
+
+usePtzCctvIds: ${PTZ_CCTV_IDS}
+
+filter:
+  fac:
+    fms: false
+
+spring:
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    hikari:
+      jdbc-url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+      driver-class-name: org.postgresql.Driver
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      max-request-size: -1
+      max-file-size: -1
+  web:
+    resources:
+      static-locations: classpath:static/**
+  mvc:
+    static-path-pattern: /static/**
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML
+    cache: false
+    template-resolver-order: 0
+    check-template: true
+    check-template-location: true
+
+system:
+  values:
+    clientCd: ${CLIENT_CD}
+    secret: ${SYSTEM_SECRET}
+    key: ${SYSTEM_KEY}
+    useEventAuth: false
+    port: 8087
+    eventPort: 25000
+    wsPort: 26000
+
+platform:
+  cryptsvr:
+    system:
+      key: ${CRYPT_SYSTEM_KEY}
+      secret: ${CRYPT_SYSTEM_SECRET}
+    api:
+      address: ${CRYPT_API_ADDRESS}
+    decrypt: /decrypt
+    crypt:
+      type: ARIA
+  oms:
+    url: ${OMS_URL}
+    subUrls:
+      getUserInfo: /api/user/info
+  fms:
+    url: ${FMS_URL}
+    subUrls:
+      fac: /mgt/fac
+      icon: /common/getLayerIcon
+  ers:
+    url: ${ERS_URL}
+    eventIdKey: accidentId
+  mrs:
+    address: ${MRS_ADDRESS}
+    port:
+      template: ${MRS_PORT}
+  ocs:
+    url: ${OCS_URL}
+    subUrls:
+      outTruck: /evt/outTruck/{orcNo}
+  xeus:
+    url: ${XEUS_URL}
+    subUrls:
+      setPtz: setPTZ.json
+
+hams:
+  address: ${HAMS_ADDRESS}
+  port: ${HAMS_PORT}
+  id: ${HAMS_ID}
+  pw: ${HAMS_PW}
+  cryptKey: ${HAMS_CRYPT_KEY}
+  isUseCrypt: true
+  facClfyId: ${HAMS_FAC_CLFY_ID}
+  datasource:
+    hikari:
+      jdbc-url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+      driver-class-name: org.postgresql.Driver
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+firestation:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:postgresql://${FIRESTATION_DB_HOST}:${FIRESTATION_DB_PORT}/${FIRESTATION_DB_NAME}
+      driver-class-name: org.postgresql.Driver
+      username: ${FIRESTATION_DB_USERNAME}
+      password: ${FIRESTATION_DB_PASSWORD}
+
+standardsystem:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:oracle:thin:@${STANDARD_DB_HOST}:${STANDARD_DB_PORT}/${STANDARD_DB_SID}
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      username: ${STANDARD_DB_USERNAME}
+      password: ${STANDARD_DB_PASSWORD}
+
+public:
+  common:
+    apis:
+      vworld:
+        url: http://api.vworld.kr/req
+        params:
+          key: ${VWORLD_API_KEY}
+      fireResponder:
+        url: ${FIRE_RESPONDER_URL}
+        params:
+          id: ${FIRE_RESPONDER_ID}
+          pwd: ${FIRE_RESPONDER_PWD}
+          key: ${FIRE_RESPONDER_KEY}

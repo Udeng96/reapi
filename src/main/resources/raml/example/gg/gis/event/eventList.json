@@ -1,0 +1,30 @@
+[
+  {
+    "statEvetOutbSeqn" : "이벤트 식별값",
+    "eventId" : "000SVC001E01",
+    "eventNm" : "이벤트 명칭",
+    "locationCd" : "지자체 구분 코드",
+    "locationNm" : "지자체 명칭",
+    "lat": 37.222222,
+    "lng": 127.222222,
+    "addr" : "이벤트 발생 주소",
+    "cntn" : "이벤트 내용",
+    "outbDtm" : "20220321104922",
+    "clsDtm" : "20220321104922",
+    "procSt" : "1"
+  },
+  {
+    "statEvetOutbSeqn" : "이벤트 식별값",
+    "eventId" : "000SVC001E01",
+    "eventNm" : "이벤트 명칭",
+    "locationCd" : "지자체 구분 코드",
+    "locationNm" : "지자체 명칭",
+    "lat": 37.222222,
+    "lng": 127.222222,
+    "addr" : "이벤트 발생 주소",
+    "cntn" : "이벤트 내용",
+    "outbDtm" : "20220321104922",
+    "clsDtm" : "20220321104922",
+    "procSt" : "1"
+  }
+]

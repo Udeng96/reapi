@@ -1,0 +1,32 @@
+# FE workspace
+front/packages/*/dist/
+front/packages/*/node_modules/
+front/packages/*/*.tsbuildinfo
+front/node_modules/
+
+# BE 빌드 결과물
+build/
+target/
+**/build/classes/
+**/build/tmp/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+.vscode/
+
+# 로그
+logs/
+*.log
+src/main/resources/log/
+
+# Gradle
+.gradle/
+
+# 환경 설정 (민감 정보)
+application-local.yml
+application-secret.yml
+*.env
+.env*

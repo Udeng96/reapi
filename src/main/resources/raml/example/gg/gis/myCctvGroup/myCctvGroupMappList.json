@@ -1,0 +1,10 @@
+[
+  {
+    "myCctvGroupCctvMappId" : "맵핑 id",
+    "myCctvGroupId" : "내 cctv 그룹 id",
+    "cctvId" : "cctvId",
+    "cctvNm" : "cctv 명칭",
+    "lat" : 37.55,
+    "lng" : 127.55
+  }
+]

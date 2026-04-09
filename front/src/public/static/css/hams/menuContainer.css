@@ -1,0 +1,187 @@
+/*menuContainer style*/
+.menu_container {
+  width: 258px;
+  height: 1024px;
+  background: url("../../images/dark/page/img/hams/img_bg.png") no-repeat;
+  padding: 178px 0 0 44px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3001;
+}
+
+.menu_container::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 160px;
+  background: url("../../images/dark/page/icon/hams/icon_title_radioTower.png") no-repeat;
+  position: absolute;
+  top: 11.6px;
+  left: 39px;
+}
+
+.menu_container .container_title {
+  font-family: "NotoSansCJKM";
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #f7f7f7;
+  line-height: 1.2;
+}
+
+.menu_container .container_title span {
+  font-family: "NotoSansCJKR";
+  font-size: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff6f26), to(#ffa41c));
+  background-image: linear-gradient(to right, #ff6f26, #ffa41c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+.menu_container .nav_menu {
+  width: 100%;
+  height: auto;
+  margin-top: 51px;
+  position: relative;
+}
+
+.menu_container .nav_menu::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 11px;
+  background: url("../../images/dark/page/img/hams/img_siteButton_deco_top.png") no-repeat;
+  position: absolute;
+  top: -15px;
+  left: 72.6px;
+}
+
+.menu_container .nav_menu::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 11px;
+  background: url("../../images/dark/page/img/hams/img_siteButton_deco_bottom.png") no-repeat;
+  position: absolute;
+  bottom: -27px;
+  left: 72.6px;
+}
+
+.menu_container .nav_menu ul.nav_menu_list {
+  width: 100%;
+  height: auto;
+  max-height: 678px;
+  padding-top: 12px;
+  overflow-y: scroll;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 42px;
+  border-radius: 21px;
+  border: solid 1px #4f5163;
+  background-color: #1b1d28;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li:last-child {
+  margin-bottom: 0;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li:hover {
+  border-color: #4f5163;
+  background-color: #2b2d3a;
+}
+
+
+
+.menu_container .nav_menu ul.nav_menu_list > li.active {
+  -webkit-box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.24);
+  background-image: -webkit-gradient(linear, left top, right top, from(#943f1b), to(#ff6f26));
+  background-image: linear-gradient(to right, #943f1b, #ff6f26);
+  border-color: #ff6f26;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li.active > a {
+  color: #fff;
+}
+
+
+
+
+.menu_container .nav_menu ul.nav_menu_list > li.active.state_connected::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 48px;
+  background: url("../../images/dark/page/icon/hams/icon_siteButton_connected.png") no-repeat;
+  position: absolute;
+  top: -12px;
+  left: 6px;
+  z-index: 1;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li.active.state_disconnected::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 48px;
+  background: url("../../images/dark/page/icon/hams/icon_siteButton_disconnected.png") no-repeat;
+  position: absolute;
+  top: -12px;
+  left: 6px;
+  z-index: 1;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li:active {
+  border-color: #cf5717;
+  background-color: #1a1b26;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li:active > a {
+  color: #ff6f26;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li > a {
+  max-width: 102px;
+  font-family: "NotoSansCJKM";
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
+  font-size: 14px;
+  color: #e1e2e3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: underline;
+  position:relative;
+}
+.menu_container .nav_menu ul.nav_menu_list > li> a:hover::after{
+  content:"";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.menu_container .nav_menu ul.nav_menu_list > li .hams.tooltip_text {
+  top: 34px;
+  left: 74px;
+}

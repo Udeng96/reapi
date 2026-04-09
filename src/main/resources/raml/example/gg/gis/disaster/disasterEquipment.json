@@ -1,0 +1,16 @@
+[
+  {
+    "seq": 123213,
+    "equipCode": "장비코드",
+    "equipName": "장비명",
+    "sensorCode": 3213123123,
+    "sensorName": "센서명",
+    "sensorComment": "센서설명",
+    "organCode": "현장식별키",
+    "siteNm": "사이트명",
+    "siteCd": "사이트코드",
+    "address": "주소",
+    "lat": "경도",
+    "lng": "위도"
+  }
+]

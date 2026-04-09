@@ -1,0 +1,1064 @@
+[
+  {
+    "vin": "83노6625",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "분진흡입",
+    "coords": null
+  },
+  {
+    "vin": "82무5003",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "83사9442",
+    "tid": "01229188890",
+    "avgspeed": 29.645,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.64794,
+      "latitude": 37.493416
+    }
+  },
+  {
+    "vin": "83거1708",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "강화군",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "80바9330",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9440",
+    "tid": "01229188410",
+    "avgspeed": 0.44,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.64557,
+      "latitude": 37.50205
+    }
+  },
+  {
+    "vin": "70더7004",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "92주0622",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "동구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "88조3472",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "84두2292",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "옹진군",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "80바4571",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "86도7807",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "87더9606",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "강화군",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "95다2482",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "83노6600",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "87두0779",
+    "tid": "01229188404",
+    "avgspeed": 9.48,
+    "guname": "미추홀구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.650734,
+      "latitude": 37.443287
+    }
+  },
+  {
+    "vin": "87고4525",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "동구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "89누7965",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "91거2220",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "미추홀구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "91다0602",
+    "tid": "01221001377",
+    "avgspeed": 6.26,
+    "guname": "미추홀구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.68308,
+      "latitude": 37.43862
+    }
+  },
+  {
+    "vin": "85버2468",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "80바4683",
+    "tid": "01229188860",
+    "avgspeed": 0.07,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.61311,
+      "latitude": 37.553032
+    }
+  },
+  {
+    "vin": "83거3585",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "동구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "97구4115",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "미추홀구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "93수5726",
+    "tid": "01229188223",
+    "avgspeed": 5.945,
+    "guname": "연수구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.669785,
+      "latitude": 37.394817
+    }
+  },
+  {
+    "vin": "86더7898",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "81저7363",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "81마2433",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "85모1667",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "85버2467",
+    "tid": "01229188909",
+    "avgspeed": 3.555,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.654076,
+      "latitude": 37.583008
+    }
+  },
+  {
+    "vin": "81저7373",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "83더5944",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9421",
+    "tid": "01229188915",
+    "avgspeed": 0.12,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.65601,
+      "latitude": 37.60151
+    }
+  },
+  {
+    "vin": "95바5850",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "80마0802",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "84사9448",
+    "tid": "01229188908",
+    "avgspeed": 11.275,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.701614,
+      "latitude": 37.453117
+    }
+  },
+  {
+    "vin": "80아1548",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "82라2806",
+    "tid": "01229188395",
+    "avgspeed": 8.461111,
+    "guname": "남동구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.69957,
+      "latitude": 37.408123
+    }
+  },
+  {
+    "vin": "94가0103",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9474",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": null
+  },
+  {
+    "vin": "80다0214",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "80아1472",
+    "tid": "01221004405",
+    "avgspeed": 18.421053,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.618256,
+      "latitude": 37.554096
+    }
+  },
+  {
+    "vin": "81더3254",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "89로8508",
+    "tid": "01221005386",
+    "avgspeed": 5.22,
+    "guname": "남동구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.70375,
+      "latitude": 37.413048
+    }
+  },
+  {
+    "vin": "95다2400",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "84보3370",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "80아1484",
+    "tid": "01229188912",
+    "avgspeed": 0.505,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.67923,
+      "latitude": 37.593735
+    }
+  },
+  {
+    "vin": "80사3110",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "97소3958",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "미추홀구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "85자1853",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "84두2222",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "옹진군",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "91두7646",
+    "tid": "01229188217",
+    "avgspeed": 9.266666,
+    "guname": "서구",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.67736,
+      "latitude": 37.544987
+    }
+  },
+  {
+    "vin": "81바8826",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "85자1444",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "84가0122",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9410",
+    "tid": "01229188414",
+    "avgspeed": 8.33,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.75059,
+      "latitude": 37.532825
+    }
+  },
+  {
+    "vin": "82무5151",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "83사9461",
+    "tid": "01229188807",
+    "avgspeed": 2.21875,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.64503,
+      "latitude": 37.51411
+    }
+  },
+  {
+    "vin": "91다0603",
+    "tid": "01229188406",
+    "avgspeed": 6.4,
+    "guname": "미추홀구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.6507,
+      "latitude": 37.443348
+    }
+  },
+  {
+    "vin": "86소9123",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "남동구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "81바4386",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "93우0381",
+    "tid": "01229188224",
+    "avgspeed": 0.13,
+    "guname": "연수구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.66962,
+      "latitude": 37.39474
+    }
+  },
+  {
+    "vin": "85자4280",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "80소0224",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9403",
+    "tid": "01229188866",
+    "avgspeed": 27.983334,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.61746,
+      "latitude": 37.553925
+    }
+  },
+  {
+    "vin": "83사9441",
+    "tid": "01229188419",
+    "avgspeed": 11.475,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.69968,
+      "latitude": 37.523804
+    }
+  },
+  {
+    "vin": "85아6801",
+    "tid": "01229188865",
+    "avgspeed": 8.822222,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.75062,
+      "latitude": 37.53279
+    }
+  },
+  {
+    "vin": "38오7200",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "강화군",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "82어5669",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "남동구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "90오0380",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "미추홀구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "80아1496",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83노6650",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "88서0646",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "중구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "80소0244",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "89고9352",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9480",
+    "tid": "01229423904",
+    "avgspeed": 10.65,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.61861,
+      "latitude": 37.588562
+    }
+  },
+  {
+    "vin": "80바7743",
+    "tid": "01229427627",
+    "avgspeed": 8.733334,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.643936,
+      "latitude": 37.498898
+    }
+  },
+  {
+    "vin": "80아1594",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9478",
+    "tid": "01229443881",
+    "avgspeed": 9.853847,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.72213,
+      "latitude": 37.528633
+    }
+  },
+  {
+    "vin": "83사9479",
+    "tid": "01229413654",
+    "avgspeed": 6.769231,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.61961,
+      "latitude": 37.484444
+    }
+  },
+  {
+    "vin": "83사9477",
+    "tid": "01229435180",
+    "avgspeed": 27.95,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.6482,
+      "latitude": 37.49849
+    }
+  },
+  {
+    "vin": "81바8457",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "81바8825",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "85자4255",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "81바8718",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "86더9686",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "93러0725",
+    "tid": "01229188919",
+    "avgspeed": 28.373333,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.66423,
+      "latitude": 37.55928
+    }
+  },
+  {
+    "vin": "83바9772",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "91도0912",
+    "tid": "01221005611",
+    "avgspeed": 8.558824,
+    "guname": "남동구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.69964,
+      "latitude": 37.40813
+    }
+  },
+  {
+    "vin": "93러0723",
+    "tid": "01229188832",
+    "avgspeed": 5.93,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.66215,
+      "latitude": 37.58151
+    }
+  },
+  {
+    "vin": "80바9312",
+    "tid": "01229188227",
+    "avgspeed": 7.785,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.69584,
+      "latitude": 37.58446
+    }
+  },
+  {
+    "vin": "83사9401",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "89수9803",
+    "tid": "01229188821",
+    "avgspeed": 20.68,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.674324,
+      "latitude": 37.55209
+    }
+  },
+  {
+    "vin": "80아1476",
+    "tid": "01229188864",
+    "avgspeed": 0.135,
+    "guname": "인천시_용역",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.672935,
+      "latitude": 37.592247
+    }
+  },
+  {
+    "vin": "82어2210",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "서구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "83사9407",
+    "tid": "01229188407",
+    "avgspeed": 16.3,
+    "guname": "인천시_용역",
+    "vtype": "분진흡입",
+    "coords": {
+      "longitude": 126.663704,
+      "latitude": 37.567066
+    }
+  },
+  {
+    "vin": "83저4730",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "91도0982",
+    "tid": "01221580820",
+    "avgspeed": 14.822222,
+    "guname": "남동구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.69964,
+      "latitude": 37.408188
+    }
+  },
+  {
+    "vin": "89너6424",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "84보3369",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "계양구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "81더3255",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "부평구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "82어5775",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "남동구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "93우0382",
+    "tid": "01229188220",
+    "avgspeed": 5.625,
+    "guname": "연수구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.67,
+      "latitude": 37.394722
+    }
+  },
+  {
+    "vin": "91두7602",
+    "tid": "01229188931",
+    "avgspeed": 0.755,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.65098,
+      "latitude": 37.598106
+    }
+  },
+  {
+    "vin": "82어5776",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "남동구",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "90조7979",
+    "tid": "01229188830",
+    "avgspeed": 20.665,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.67681,
+      "latitude": 37.545147
+    }
+  },
+  {
+    "vin": "81바8634",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "노면청소",
+    "coords": null
+  },
+  {
+    "vin": "86로1705",
+    "tid": "01221001905",
+    "avgspeed": 3.7,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.66094,
+      "latitude": 37.583122
+    }
+  },
+  {
+    "vin": "86로1712",
+    "tid": "01229188929",
+    "avgspeed": 9.905,
+    "guname": "서구",
+    "vtype": "살수",
+    "coords": {
+      "longitude": 126.67536,
+      "latitude": 37.52448
+    }
+  },
+  {
+    "vin": "85버2496",
+    "tid": "01229188927",
+    "avgspeed": 6.8285713,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.67743,
+      "latitude": 37.54521
+    }
+  },
+  {
+    "vin": "85버2486",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "서구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "85버2491",
+    "tid": "01229188815",
+    "avgspeed": 1.87,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.67706,
+      "latitude": 37.545296
+    }
+  },
+  {
+    "vin": "86로1717",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "서구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "85버2495",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "서구",
+    "vtype": "살수",
+    "coords": null
+  },
+  {
+    "vin": "86로1780",
+    "tid": "01229188392",
+    "avgspeed": 2.56,
+    "guname": "서구",
+    "vtype": "노면청소",
+    "coords": {
+      "longitude": 126.67722,
+      "latitude": 37.555183
+    }
+  },
+  {
+    "vin": "예비123",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "기타",
+    "coords": null
+  },
+  {
+    "vin": "예비1234",
+    "tid": "미운행",
+    "avgspeed": -1.0,
+    "guname": "연수구_용역",
+    "vtype": "기타",
+    "coords": null
+  }
+]

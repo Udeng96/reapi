@@ -1,0 +1,76 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "CCTV Monitor",
+  "dateExported": "2026-03-31",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "r-cctv-monitor-list",
+      "colId": "",
+      "containerId": "",
+      "name": "CCTV 모니터 목록 (분류별 그룹)",
+      "url": "http://localhost:30003/api/cctv/monitor",
+      "method": "GET",
+      "sortNum": 10000
+    },
+    {
+      "_id": "r-cctv-monitor-by-clfy",
+      "colId": "",
+      "containerId": "",
+      "name": "CCTV 모니터 목록 (분류 지정)",
+      "url": "http://localhost:30003/api/cctv/monitor?clfyId=CLFY001",
+      "method": "GET",
+      "sortNum": 10100
+    },
+    {
+      "_id": "r-cctv-list",
+      "colId": "",
+      "containerId": "",
+      "name": "CCTV 목록 (페이징)",
+      "url": "http://localhost:30003/api/cctv?page=1&rows=10",
+      "method": "GET",
+      "sortNum": 10200
+    },
+    {
+      "_id": "r-cctv-search",
+      "colId": "",
+      "containerId": "",
+      "name": "CCTV 검색",
+      "url": "http://localhost:30003/api/cctv?cctvNm=test&page=1&rows=10",
+      "method": "GET",
+      "sortNum": 10300
+    },
+    {
+      "_id": "r-cctv-detail",
+      "colId": "",
+      "containerId": "",
+      "name": "CCTV 단건 상세",
+      "url": "http://localhost:30003/api/cctv/{cctvId}",
+      "method": "GET",
+      "sortNum": 10400
+    },
+    {
+      "_id": "r-cctv-clfy",
+      "colId": "",
+      "containerId": "",
+      "name": "CCTV 분류 목록",
+      "url": "http://localhost:30003/api/cctv/clfy",
+      "method": "GET",
+      "sortNum": 10500
+    },
+    {
+      "_id": "r-ptz-control",
+      "colId": "",
+      "containerId": "",
+      "name": "PTZ 제어",
+      "url": "http://localhost:30003/api/cctv/control/{cctvId}",
+      "method": "POST",
+      "sortNum": 10600,
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"cctvId\": \"CTV0000001\",\n  \"action\": \"start\",\n  \"code\": \"Up\"\n}"
+      }
+    }
+  ]
+}

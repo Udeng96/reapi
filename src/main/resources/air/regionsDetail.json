@@ -1,0 +1,293 @@
+{
+  "resultType": "success",
+  "message": "정상처리 되었습니다.",
+  "data": {
+    "city": {
+      "locationName": "seoul",
+      "khaiValue": "good",
+      "pm10Value": "normal",
+      "pm25Value": "normal",
+      "so2Value": "good",
+      "coValue": "good",
+      "o3Value": "good",
+      "no2Value": "normal"
+    },
+    "region": [
+      {
+        "locationName": "jongno",
+        "khaiValue": "normal",
+        "pm10Value": "good",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 22
+      },
+      {
+        "locationName": "junggu",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "good",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 23
+      },
+      {
+        "locationName": "yongsan",
+        "khaiValue": "normal",
+        "pm10Value": "good",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 1
+      },
+      {
+        "locationName": "sungdong",
+        "khaiValue": "good",
+        "pm10Value": "good",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gwangjin",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "dongdaemun",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "jungnang",
+        "khaiValue": "good",
+        "pm10Value": "normal",
+        "pm25Value": "good",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "seongbuk",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangbuk",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "good",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "dobong",
+        "khaiValue": "good",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "nowon",
+        "khaiValue": "good",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "eunpyeong",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "seodaemun",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "good",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "mapo",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "normal",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "yangcheon",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "normal",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangseo",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "guro",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "normal",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "geumcheon",
+        "khaiValue": "good",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "normal",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "yeongdeungpo",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "dongjak",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "normal",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gwanak",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "seocho",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangnam",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "normal",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "songpa",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      },
+      {
+        "locationName": "gangdong",
+        "khaiValue": "normal",
+        "pm10Value": "normal",
+        "pm25Value": "normal",
+        "so2Value": "good",
+        "coValue": "good",
+        "o3Value": "good",
+        "no2Value": "normal",
+        "esri_pk": 10
+      }
+    ]
+  }
+}

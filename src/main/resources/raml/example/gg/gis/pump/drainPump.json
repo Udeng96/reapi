@@ -1,0 +1,24 @@
+[
+  {
+    "sigunNm": "시군명",
+    "sigunCd": "시군코드",
+    "facltNm": "시설명",
+    "instlDe": "설치일자",
+    "instlPurps": "설치목적",
+    "mtrPumpScalDtls": "모터펌프규모(kW(HP))",
+    "mtrPumpCntInfo": "모터펌프대수(대)",
+    "engPumpScalDtls": "엔진펌프규모(kW(HP))",
+    "engPumpCnt": "엔진펌프대수(대)",
+    "kelepowSuplyMethd": "한전전원공급방식(1회선 또는 2회선)",
+    "emrGenorInfo": "비상발전기(kW(HP))",
+    "emrGenorCnt": "비상발전기대수(대)",
+    "kelepowConSuplyInfo": "한전계약전력(kW, 고압/저압)",
+    "useElecpwrInfo": "사용전력량(kWH)/년 (최대/최소,고압/저압)",
+    "elctyChrgInfo": "전기요금(원)/년 (최대/최소,고압/저압)",
+    "refineLotnoAddr": "소재지지번주소",
+    "refineRoadnmAddr": "소재지도로명주소",
+    "refineZipCd": "소재지우편번호",
+    "refineWgs84Logt": "WGS84경도",
+    "refineWgs84Lat": "WGS84위도"
+  }
+]

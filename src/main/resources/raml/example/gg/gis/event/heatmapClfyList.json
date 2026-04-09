@@ -1,0 +1,30 @@
+[
+  {
+    "svcThemeCd": "ccc111",
+    "svcThemeNm" : "테마111",
+    "itemList" : [
+      {
+        "unitCd" : "unit111",
+        "unitNm" : "유닛 333"
+      },
+      {
+        "unitCd" : "unit222",
+        "unitNm" : "유닛 666"
+      }
+    ]
+  },
+  {
+    "svcThemeCd": "ccc222",
+    "svcThemeNm" : "테마222",
+    "itemList" : [
+      {
+        "unitCd" : "unit222",
+        "unitNm" : "유닛 444"
+      },
+      {
+        "unitCd" : "unit333",
+        "unitNm" : "유닛 555"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "channelId": "channelId1",
+    "station": "station1",
+    "car": "car 1",
+    "carnum": "",
+    "connect": "",
+    "rtspAddr": "http://localhost:3000/rtsp/1"
+  },
+  {
+    "channelId": "channelId2",
+    "station": "station2",
+    "car": "car 2",
+    "carnum": "",
+    "connect": "",
+    "rtspAddr": "http://localhost:3000/rtsp/2"
+  }
+]

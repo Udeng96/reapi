@@ -1,0 +1,20 @@
+[
+  {
+    "id" : "clfy_dnasjnvjobboq33",
+    "nm" : "일반 시설물",
+    "gisNormalIconUrl": "http://localhost:12010/fms/common/getLayerIcon?fileId=FIL_979b14cb3c584e5492e5d6c3654435a1",
+    "gisHoverIconUrl": "http://localhost:12010/fms/common/getLayerIcon?fileId=FIL_979b14cb3c584e5492e5d6c3654435a1",
+    "gisActiveIconUrl": "http://localhost:12010/fms/common/getLayerIcon?fileId=FIL_979b14cb3c584e5492e5d6c3654435a1",
+    "regDtm" : "20220326132422",
+    "facCount" : 123
+  },
+  {
+    "id" : "clfy_dnasjnvjobboq33",
+    "nm" : "일반 시설물",
+    "gisNormalIconUrl": "http://localhost:12010/fms/common/getLayerIcon?fileId=FIL_979b14cb3c584e5492e5d6c3654435a1",
+    "gisHoverIconUrl": "http://localhost:12010/fms/common/getLayerIcon?fileId=FIL_979b14cb3c584e5492e5d6c3654435a1",
+    "gisActiveIconUrl": "http://localhost:12010/fms/common/getLayerIcon?fileId=FIL_979b14cb3c584e5492e5d6c3654435a1",
+    "regDtm" : "20220326132422",
+    "facCount" : 123
+  }
+]

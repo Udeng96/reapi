@@ -1,0 +1,71 @@
+/*cctvFullPopup style*/
+.cctv_full_popup {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3001;
+  display: none;
+}
+
+.cctv_full_popup .cctv_full_popup_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: rgba(10, 11, 16, 0.5);
+  padding: 0 22px 0 16.2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cctv_full_popup .cctv_full_popup_header .cctv_full_title {
+  padding-left: 41px;
+  font-family: "NotoSansCJKR";
+  font-size: 20px;
+  color: #f7f7f7;
+  position: relative;
+}
+
+.cctv_full_popup .cctv_full_popup_header .cctv_full_title::before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cctv_full_popup .cctv_full_popup_header .cctv_full_title.type_event::before {
+  background: url("/images/dark/page/icon/icon_fullScreen_header_event.png") no-repeat;
+}
+
+.cctv_full_popup .cctv_full_popup_header .cctv_full_title.type_castnet::before {
+  background: url("/images/dark/page/icon/icon_fullScreen_header_castNet.png") no-repeat;
+}
+
+.cctv_full_popup .cctv_full_popup_header .btn_close {
+  width: 40px;
+  height: 40px;
+  background: url("/images/dark/page/btn/btn_fullScreen_close_normal.png") no-repeat;
+}
+
+.cctv_full_popup .cctv_full_popup_header .btn_close:hover {
+  background: url("/images/dark/page/btn/btn_fullScreen_close_hover.png") no-repeat;
+}
+
+.cctv_full_popup .cctv_in {
+  width: 100%;
+  height: 100%;
+  background: url("/images/dark/page/img/img_sample.png") no-repeat;
+}

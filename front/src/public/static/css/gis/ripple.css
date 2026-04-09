@@ -1,0 +1,30 @@
+/*rippleEffect style*/
+.ripple {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: white;
+  pointer-events: none;
+  opacity: .2;
+  -webkit-animation: ripple .4s linear;
+          animation: ripple .4s linear;
+}
+
+@-webkit-keyframes ripple {
+  to {
+    width: 40rem;
+    height: 40rem;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  to {
+    width: 40rem;
+    height: 40rem;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "locId": "location_4xfxAzon4i5bpaHd4VCIXT",
+    "routeId": "route_6CYwWz3J4ht83D2Ys1ztoh",
+    "lon": "37.448569",
+    "lat": "126.701917",
+    "address": "경기도 어딘가",
+    "index" : 1
+  },
+  {
+    "locId": "location_4xfxAzon4i5bpaHd4VCIXT",
+    "routeId": "route_6CYwWz3J4ht83D2Ys1ztoh",
+    "lon": "37.448569",
+    "lat": "126.701917",
+    "address": "경기도 어딘가",
+    "index" : 2
+  }
+]

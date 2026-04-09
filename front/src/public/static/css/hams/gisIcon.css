@@ -1,0 +1,113 @@
+/*gisIcon style*/
+.map_area .gis_icon {
+  width: 88px;
+  height: 115px;
+  position: absolute;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  z-index: 1;
+}
+
+.map_area .gis_icon .gis_floor_icon {
+  width: 80px;
+  height: 76px;
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_hover_floor.png") no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  display: none;
+}
+
+.map_area .gis_icon .gis_connect_icon {
+  width: 80px;
+  height: 106px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.map_area .gis_icon .gis_connect_icon.state_connected {
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_connected_normal.png") no-repeat;
+}
+
+.map_area .gis_icon .gis_connect_icon.state_disconnected {
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_disconnected_normal.png") no-repeat;
+}
+
+.map_area .gis_icon .gis_connect_icon.active.state_connected {
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_connected_active.png") no-repeat;
+}
+
+.map_area .gis_icon .gis_connect_icon.active.state_disconnected {
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_disconnected_active.png") no-repeat;
+}
+
+.map_area .gis_icon .gis_door_icon {
+  width: 32px;
+  height: 50px;
+  position: absolute;
+  top: 48px;
+  left: 0;
+}
+
+.map_area .gis_icon .gis_door_icon.state_open {
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_door_open.png") no-repeat;
+}
+
+.map_area .gis_icon .gis_door_icon.state_close {
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_door_close.png") no-repeat;
+}
+
+.map_area .gis_icon .gis_door_icon.state_nodata {
+  background: url("../../images/dark/page/icon/hams/gis/icon_gis_door_nodata.png") no-repeat;
+}
+
+.map_area .loc_1 {
+  top: 152px;
+  left: 774px;
+}
+
+.map_area .loc_2 {
+  top: 159px;
+  left: 716px;
+}
+
+.map_area .loc_3 {
+  top: 121px;
+  left: 743px;
+}
+
+.map_area .loc_4 {
+  top: 150px;
+  left: 841px;
+}
+
+.map_area .loc_5 {
+  top: 202px;
+  left: 802px;
+}
+
+.map_area .loc_6 {
+  top: 237px;
+  left: 844px;
+}
+
+.map_area .loc_7 {
+  top: 368px;
+  left: 481px;
+}
+
+.map_area .loc_8 {
+  top: 176px;
+  left: 311px;
+}
+
+.map_area .loc_9 {
+  top: 119px;
+  left: 518px;
+}
+
+.map_area .loc_10 {
+  top: 204px;
+  left: 44px;
+}

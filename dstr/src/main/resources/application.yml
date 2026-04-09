@@ -1,0 +1,78 @@
+server:
+  port: 30001
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: rino_ioc
+
+# 외부 플랫폼 연동 URL
+platform:
+  oms:
+    url: ${OMS_URL}
+    subUrls:
+      getUserInfo: /api/user/info
+  fms:
+    url: ${FMS_URL}
+    subUrls:
+      fac: /mgt/fac
+      icon: /common/getLayerIcon
+  ers:
+    url: ${ERS_URL}
+    eventIdKey: accidentId
+  mrs:
+    address: ${MRS_ADDRESS}
+    port:
+      template: ${MRS_PORT}
+  ocs:
+    url: ${OCS_URL}
+    subUrls:
+      outTruck: /evt/outTruck/{orcNo}
+  xeus:
+    url: ${XEUS_URL}
+    subUrls:
+      setPtz: setPTZ.json
+  cryptsvr:
+    system:
+      key: ${CRYPT_SYSTEM_KEY}
+      secret: ${CRYPT_SYSTEM_SECRET}
+    api:
+      address: ${CRYPT_API_ADDRESS}
+    decrypt: /decrypt
+    crypt:
+      type: ARIA
+
+# 시스템 설정
+system:
+  values:
+    clientCd: ${CLIENT_CD}
+    secret: ${SYSTEM_SECRET}
+    key: ${SYSTEM_KEY}
+    useEventAuth: false
+
+# VWorld API
+public:
+  common:
+    apis:
+      vworld:
+        url: http://api.vworld.kr/req
+        params:
+          key: ${VWORLD_API_KEY}
+      fireResponder:
+        url: ${FIRE_RESPONDER_URL}
+        params:
+          id: ${FIRE_RESPONDER_ID}
+          pwd: ${FIRE_RESPONDER_PWD}
+          key: ${FIRE_RESPONDER_KEY}

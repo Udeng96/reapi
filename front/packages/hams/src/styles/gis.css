@@ -1,0 +1,67 @@
+/*gis style*/
+.hams .hams.gis_area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hams .hams.gis_area .map_area {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/dark/page/img/hams/img_map_graphic.png") no-repeat;
+  position: absolute;
+  top: 132px;
+  left: 264px;
+  z-index: 0;
+  opacity: 1;
+}
+
+
+.hams.gis_area .gis_legend_img {
+  width: 690px;
+  height: 120px;
+  background: url("../../images/dark/page/img/hams/img_legend.png") no-repeat;
+  position: absolute;
+  bottom: 34px;
+  left: 309px;
+  z-index: 3000;
+}
+
+.hams.gis_area .btn_reload {
+  width: 32px;
+  height: 32px;
+  background: url("../../images/dark/page/btn/hams/btn_reload_small_normal.png") no-repeat;
+  position: absolute;
+  top: 101px;
+  left: 314px;
+  z-index: 3000;
+}
+
+.hams.gis_area .btn_reload:hover {
+  background: url("../../images/dark/page/btn/hams/btn_reload_small_hover.png") no-repeat;
+}
+
+.hams.gis_area .btn_reload:active {
+  background: url("../../images/dark/page/btn/hams/btn_reload_small_click.png") no-repeat;
+}
+
+.hams.gis_area .btn_reload::after {
+  content: "Reload";
+  display: block;
+  font-family: "NotoSansCJKR";
+  font-size: 13px;
+  color: #a5a7b5;
+  position: absolute;
+  top: 6.5px;
+  left: 40px;
+}
+
+.hams.gis_area .update_time_value {
+  font-family: "NotoSansCJKL";
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: #777987;
+  position: absolute;
+  top: 126.4px;
+  left: 354px;
+}

@@ -1,0 +1,2534 @@
+#%RAML 1.0
+title: Incheon API RAML Document
+version: 0.2
+protocols: [HTTP]
+mediaType: application/json
+baseUri: http://{domain}:{port}/api
+baseUriParameters:
+  domain:
+    type : string
+    description: API 서버가 설치된 도메인
+  port:
+    type : integer
+    description: API 서버 접속 포트(80인 경우 생략)
+description: 인천 API 문서
+
+types:
+  mainArea:
+    type: object
+    displayName: 주요구역
+    description: 주요구역
+    required: false
+    properties:
+      mainAreaName:
+        type: string
+        description: 주요구역 이름
+        required: false
+      mainAreaGeojson:
+        type: string
+        description: 주요구역 도형 데이터
+        required: false
+      regUser:
+        type: string
+        description: 주요구역 등록자명
+        required: false
+      regDate:
+        type: string
+        description: 주요구역 등록일자
+        required: false
+  mainArea_id:
+    type: mainarea
+    displayName: 주요구역
+    description: 주요구역 아이디
+    required: false
+    properties:
+      mainAreaId:
+        type: string
+        description: 주요구역 아이디
+        required: false
+  route:
+    type: object
+    displayName: 경로
+    description: 경로
+    required: false
+    properties:
+      routeName:
+        type: string
+        description: 경로명
+        required: false
+      regUser:
+        type: string
+        description: 등록자명
+        required: false
+      regDate:
+        type: string
+        description: 등록일자
+        required: false
+  route_id:
+    type: route
+    displayName: 경로
+    description: 경로
+    required: false
+    properties:
+      routeId:
+        type: string
+        description: 경로 아이디
+        required: false
+  location:
+    type: object
+    displayName: 위치
+    description: 위치
+    required: false
+    properties:
+      routeId:
+        type: string
+        description: 경로 아이디
+        required: false
+      lon:
+        type: string
+        description: 경도
+        required: false
+      lat:
+        type: string
+        description: 위도
+        required: false
+      address:
+        type: string
+        description: 주소
+        required: false
+  loc_id:
+    type: location
+    displayName: 위치
+    description: 위치
+    required: false
+    properties:
+      locId:
+        type: string
+        description: 위치 아이디
+        required: false
+  cctvGroup:
+    type: object
+    displayName: CCTV 그룹
+    description: CCTV 그룹
+    required: false
+    properties:
+      cctvGroupName:
+        type: string
+        description: CCTV 그룹명
+        required: false
+      regUser:
+        type: string
+        description: 등록자명
+        required: false
+      regDate:
+        type: string
+        description: 등록일자
+        required: false
+  cctv_group_id:
+    type: cctvGroup
+    displayName: CCTV 그룹
+    description: CCTV 그룹
+    required: false
+    properties:
+      cctvGroupId:
+        type: string
+        description: CCTV 그룹 아이디
+        required: false
+  cctv:
+    type: object
+    displayName: CCTV
+    description: CCTV
+    required: false
+    properties:
+      cctvGroupId:
+        type: string
+        description: CCTV 그룹 아이디
+        required: false
+      cctvId:
+        type: string
+        description: CCTV 아이디
+        required: false
+      cctvName:
+        type: string
+        description: CCTV명
+        required: false
+  group_mapp_id:
+    type: cctv
+    displayName: CCTV
+    description: CCTV
+    required: false
+    properties:
+      groupMappId:
+        type: string
+        description: CCTV 매핑 아이디 ( 자동 생성 )
+        required: false
+  coords:
+      type: object
+      displayName: 좌표
+      description: 좌표
+      required: false
+      properties:
+        longitude:
+          type: number
+          description: 경도
+          required: false
+        latitude:
+          type: number
+          description: 위도
+          required: false
+    cleancar_realtime:
+      type: object
+      displayName: 청소차량 실시간정보
+      description: 청소차량 실시간정보
+      required: false
+      properties:
+        vin:
+          type: string
+          description: 차량번호
+          required: false
+        tid:
+          type: string
+          description: 운행 아이디
+          required: false
+        avgspeed:
+          type: number
+          description: 평균속도
+          required: false
+        guname:
+          type: string?
+          description: 구 이름
+          required: false
+        vtype:
+          type: string?
+          description: 차량 타입
+          required: false
+        coords:
+          type: coords?
+          description: 좌표
+          required: false
+    cleancar_history:
+      type: object
+      displayName: 청소차량 실시간정보
+      description: 청소차량 실시간정보
+      required: false
+      properties:
+        telId:
+          type: string
+          description: 운행 아이디
+          required: false
+        vin:
+          type: string
+          description: 차량번호
+          required: false
+        vtype:
+          type: string
+          description: 차량 타입
+          required: false
+        guname:
+          type: string
+          description: 구 이름
+          required: false
+        avgspeed:
+          type: number
+          description: 평균속도
+          required: false
+        wtDist:
+          type: number?
+          description: 사용안함
+          required: false
+        wtAmt:
+          type: number?
+          description: 사용안함
+          required: false
+        routeLen:
+          type: number?
+          description: 사용안함
+          required: false
+        fld:
+          type: string?
+          description: 사용안함
+          required: false
+        comm:
+          type: string
+          description: 사용안함
+          required: false
+        cleanLen:
+          type: number?
+          description: 청소 거리
+          required: false
+        worktime:
+          type: number?
+          description: 청소 시간
+          required: false
+        shapeLength:
+          type: number?
+          description: 사용안함
+          required: false
+        coords:
+          type: coords[]?
+          description: 좌표 이력
+          required: false
+  report:
+    type: object
+    displayName: 보고서
+    description: 보고서
+    required: false
+    properties:
+      title:
+        type: string
+        description: 보고서 제목
+        required: false
+      content:
+        type: string
+        description: 보고서 내용
+        required: false
+      dptId:
+        type: string
+        description: 부서 아이디
+        required: false
+      regDate:
+        type: string
+        description: 등록일자
+        required: false
+      regUser:
+        type: string
+        description: 등록자
+        required: false
+      statEvetOutbSeqn:
+         type: string
+         description: 해당 이벤트 유니크 id (보고서 관리 화면에선 사용하지 않음)
+         required: false
+  report_id:
+    type: report
+    displayName: 보고서
+    description: 보고서
+    required: false
+    properties:
+      reportId:
+        type: string
+        description: 보고서 아이디
+        required: false
+  files:
+    type: object
+    displayName: 파일
+    description: 파일
+    required: false
+    properties:
+      fileName:
+        type: string
+        description: 파일 명
+        required: false
+      fileLoc:
+        type: string
+        description: 파일 경로
+        required: false
+  files_id:
+    type: files
+    displayName: 파일
+    description: 파일
+    required: false
+    properties:
+      reportFileMappId:
+        type: string
+        description: 파일 아이디 ( 자동 생성 )
+        required: false
+  dstrgroup:
+    type: object
+    displayName: 재난 그룹
+    description: 재난 그룹
+    required: false
+    properties:
+      dstrType:
+        type: string
+        description: 재난 유형 (S->사회 재난 , N->자연 재난)
+        required: false
+      dstrGroupName:
+        type: string
+        description: 재난 그룹 명
+        required: false
+      regDate:
+        type: string
+        description: 등록일자
+        required: false
+      regUser:
+        type: string
+        description: 등록자 명
+        required: false
+  dstr_group_id:
+    type: dstrgroup
+    displayName: 재난 그룹
+    description: 재난 그룹
+    required: false
+    properties:
+      dstrGroupId:
+        type: string
+        description: 재난 그룹 아이디 ( 자동 생성 )
+        required: false
+  dstrdpt:
+    type: object
+    displayName: 재난 부서
+    description: 재난 부서
+    required: false
+    properties:
+      dstrGroupId:
+        type: string
+        description: 재난 그룹 아이디 ( 자동 생성 )
+        required: false
+      dptId:
+        type: string
+        description: 부서 아이디
+        required: false
+      dptName:
+        type: string
+        description: 부서 명
+        required: false
+  dstr_dpt_mapp_id:
+    type: dstrdpt
+    displayName: 재난 부서
+    description: 재난 부서
+    required: false
+    properties:
+      dstrDptMappId:
+        type: string
+        description: 그룹 부서 맵핑 아이디 ( 자동 생성 )
+        required: false
+  dstrhistory:
+    type: object
+    displayName: 재난 이력
+    description: 재난 이력
+    required: false
+    properties:
+      dstrGroupId:
+        type: string
+        description: 재난 그룹 아이디
+        required: false
+      dstrHistTitle:
+        type: string
+        description: 재난 이력 명
+        required: false
+      dstrHistCont:
+        type: string
+        description: 재난 이력 내용
+        required: false
+      deadCount:
+        type: string
+        description: 사망 인원
+        required: false
+      injuredCount:
+        type: string
+        description: 부상 인원
+        required: false
+      missingCount:
+        type: string
+        description: 실종 인원
+        required: false
+      damageAmount:
+        type: string
+        description: 재산 피해
+        required: false
+      occurDate:
+        type: string
+        description: 재난 발생일
+        required: false
+      regDate:
+        type: string
+        description: 재난 이력 등록일
+        required: false
+      regUser:
+        type: string
+        description: 재난 이력 등록자
+        required: false
+  dstr_hist_id:
+    type: dstrhistory
+    displayName: 재난 이력
+    description: 재난 이력
+    required: false
+    properties:
+      dstrHistId:
+        type: string
+        description: 재난 이력 아이디 ( 자동 생성 )
+        required: false
+  dstrmanager:
+    type: object
+    displayName: 재난 이력 관리자
+    description: 재난 이력 관리자
+    required: false
+    properties:
+      dstrHistId:
+        type: string
+        description: 재난 이력 아이디 ( 자동 생성 )
+        required: false
+      managerContact:
+        type: string
+        description: 관리자 연락처
+        required: false
+      managerName:
+        type: string
+        description: 관리자 명
+        required: false
+      dptId:
+        type: string
+        description: 부서 아이디
+        required: false
+  manager_mapp_id:
+    type: dstrmanager
+    displayName: 재난 이력 관리자
+    description: 재난 이력 관리자
+    required: false
+    properties:
+      managerMappId:
+        type: string
+        description: 재난 이력 관리자 아이디 ( 자동 생성 )
+        required: false
+  dstrEvetHist:
+    type: object
+    displayName: 재난 상황 전파 이력
+    description: 재난 상황 전파 이력
+    required: false
+    properties:
+      title:
+        type: string
+        description: 재난 상황 전파 이력 제목
+        required: false
+      content:
+        type: string
+        description: 재난 상황 전파 이력 내용
+        required: false
+      propagationTarget:
+        type: string
+        description: 재난 상황 전파 이력 전파 대상
+        required: false
+      statEvetOutbSeqn:
+        type: string
+        description: 재난 상황 전파 이력 맵핑 이벤트 아이디
+        required: false
+      type:
+        type: number
+        description: 재난 상황 전파 이력 타입 (1=전파, 2=공유, 3=문자발생)
+        required: false
+  dstrEvetHist_id:
+    type: dstrEvetHist
+    displayName: 재난 상황 전파 이력
+    description: 재난 상황 전파 이력
+    required: false
+    properties:
+      dstrEvetHistId:
+        type: string
+        description: 재난 상황 전파 이력 아이디
+        required: false
+  dstrEvetFile:
+    type: object
+    displayName: 재난 상황 전파 첨부파일
+    description: 재난 상황 전파 첨부파일
+    required: false
+    properties:
+      dstrEvetHistId:
+        type: string
+        description: 재난 상황 전파 이력 아이디
+        required: false
+      fileName:
+        type: string
+        description: 파일 이름
+        required: false
+      fileLoc:
+        type: string
+        description: 파일 위치
+        required: false
+  dstrEvetFile_id:
+    type: dstrEvetFile
+    displayName: 재난 상황 전파 첨부파일
+    description: 재난 상황 전파 첨부파일
+    required: false
+    properties:
+      dstrEvetHistFileMappId:
+        type: string
+        description: 재난 상황 전파 첨부파일 아이디
+        required: false
+  dstrEvetCctv:
+    type: object
+    displayName: 재난 상황 전파 CCTV
+    description: 재난 상황 전파 CCTV
+    required: false
+    properties:
+      dstrEvetHistId:
+        type: string
+        description: 재난 상황 전파 이력 아이디
+        required: false
+      cctvId:
+        type: string
+        description: CCTV 아이디
+        required: false
+      cctvName:
+        type: string
+        description: CCTV 이름
+        required: false
+  dstrEvetCctv_id:
+    type: dstrEvetCctv
+    displayName: 재난 상황 전파 CCTV
+    description: 재난 상황 전파 CCTV
+    required: false
+    properties:
+      dstrEvetHistFileMappId:
+        type: string
+        description: 재난 상황 전파 CCTV 아이디
+        required: false
+
+#주요구역
+/mainareas:
+  description: 주요구역
+  get:
+    description: 주요구역 목록 조회
+    responses:
+      200:
+        description: 정상적으로 주요구역 목록이 요청됐을 경우
+        body:
+          application/json:
+            type: mainarea_id[]
+            example: !include ../raml/example/mainarea/get_mainArea_list.json
+  post:
+      description: 주요구역 등록
+      queryParameters:
+        mainAreaName:
+          type: string
+          description: 주요구역 이름
+          required: true
+          example: "구월동001"
+        mainAreaGeojson:
+          type: string
+          description: 주요구역 도형 데이터
+          required: true
+          example: "GeoJson Data"
+        regUser:
+          type: string
+          description: 주요구역 등록자 명
+          required: true
+          example: "choiyk"
+        regDate:
+          type: string
+          description: 주요구역 등록일자
+          required: true
+          example: "202010071626123"
+      body:
+        application/json:
+          type: mainarea
+      responses:
+        201:
+          description: 정상적으로 주요구역이 등록됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 주요구역 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 주요구역 등록 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+  /{mainAreaId}:
+    uriParameters:
+      mainAreaId:
+        type: string
+        description: 주요구역 아이디
+        example: "mainarea_8EZPIl9qAI39GsXUyMSFY-"
+    put:
+      description: 주요구역 수정(전체 수정)
+      queryParameters:
+        mainAreaName:
+          type: string
+          description: 주요구역 이름
+          required: true
+          example: "구월동001"
+        mainAreaGeojson:
+          type: string
+          description: 주요구역 도형 데이터
+          required: true
+          example: "GeoJson Data"
+        regUser:
+          type: string
+          description: 주요구역 등록자명
+          required: true
+          example: "choiyk"
+        regDate:
+          type: string
+          description: 주요구역 등록일자
+          required: true
+          example: "202010071626123"
+      body:
+        application/json:
+          type: mainarea
+      responses:
+        200:
+          description: 정상적으로 주요구역이 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 주요구역 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 주요구역 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    patch:
+      description: 주요구역 수정(부분 수정)
+      queryParameters:
+        ainAreaName:
+         type: string
+         description: 주요구역 이름
+         required: true
+         example: "구월동001"
+        ainAreaGeojson:
+         type: string
+         description: 주요구역 도형 데이터
+         required: true
+         example: "GeoJson Data"
+        egUser:
+         type: string
+         description: 주요구역 등록자 명
+         required: true
+         example: "choiyk"
+        egDate:
+         type: string
+         description: 주요구역 등록일자
+         required: true
+         example: "202010071626123"
+      body:
+        application/json:
+          type: mainarea
+      responses:
+        200:
+          description: 정상적으로 주요구역이 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 주요구역 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 주요구역 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    get:
+      description: 주요구역 단건 조회
+      responses:
+        200:
+          description: 정상적으로 주요구역 단건이 요청됐을 경우
+          body:
+            application/json:
+              type: mainarea_id
+              example: !include ../raml/example/mainarea/get_mainArea.json
+    delete:
+      description: 주요구역 삭제
+      responses:
+        200:
+          description: 정상적으로 주요구역이 삭제됐을 경우
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 주요구역 삭제 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+################################################################
+#CCTV 그룹
+/mycctvgroup:
+  description: CCTV 그룹
+  get:
+    description: CCTV 그룹 목록
+    responses:
+      200:
+        description: 정상적으로 CCTV 그룹 목록이 요청됐을 경우
+        body:
+          application/json:
+            type: cctv_group_id[]
+            example: !include example/cctvgroup/get_cctv_group_list.json
+  post:
+      description: CCTV 그룹 등록
+      queryParameters:
+        cctvGroupName:
+          type: string
+          description: CCTV 그룹명
+          required: true
+          example: "구월동"
+        regUser:
+          type: string
+          description: 등록자
+          required: true
+          example: "choiyk"
+        regDate:
+          type: string
+          description: 등록 일자
+          required: true
+          example: "20201007153030358"
+      body:
+        application/json:
+          type: cctvGroup
+      responses:
+        201:
+          description: 정상적으로 CCTV 그룹이 등록됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 주요구역 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: CCTV 그룹 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+  /{cctvGroupId}:
+    uriParameters:
+      cctvGroupId:
+        type: string
+        description: CCTV 그룹 아이디
+        example: "cctvGroup_ZEXUAsnA5YaCP2Zxehzyv"
+    put:
+      description: CCTV 그룹 수정(전체 수정)
+      queryParameters:
+        cctvGroupName:
+          type: string
+          description: CCTV 그룹명
+          required: true
+          example: "관교동"
+        regUser:
+          type: string
+          description: 등록자
+          required: true
+          example: "hanug"
+        regDate:
+          type: string
+          description: 등록 일자
+          required: true
+          example: "20201007163030358"
+      body:
+        application/json:
+          type: cctvGroup
+
+      responses:
+        200:
+          description: 정상적으로 CCTV 그룹이 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: CCTV 그룹 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    patch:
+      description: CCTV 그룹 수정(부분 수정)
+      queryParameters:
+        cctvGroupName:
+          type: string
+          description: CCTV 그룹명
+          required: true
+          example: "관교동"
+        regUser:
+          type: string
+          description: 등록자
+          required: true
+          example: "hanug"
+        regDate:
+          type: string
+          description: 등록 일자
+          required: true
+          example: "20201007163030358"
+      body:
+        application/json:
+          type: cctvGroup
+      responses:
+        200:
+          description: 정상적으로 CCTV 그룹이 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: CCTV 그룹 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    get:
+      description: CCTV 그룹 단건 조회
+      responses:
+        200:
+          description: 정상적으로 CCTV 그룹 단건이 요청됐을 경우
+          body:
+            application/json:
+              type: cctv_group_id
+              example: !include example/cctvgroup/get_cctv_group.json
+    delete:
+      description: CCTV 그룹 삭제
+      responses:
+        200:
+          description: 정상적으로 CCTV 그룹이 삭제됐을 경우
+          body:
+            application/json:
+              properties:
+                message:
+                  description: CCTV 그룹 삭제 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+
+    #CCTV
+    /cctvs:
+      get:
+        description: CCTV 목록 조회
+        responses:
+          200:
+            description: 정상적으로 CCTV 목록이 요청됐을 경우
+            body:
+              application/json:
+                type: group_mapp_id[]
+                example: !include ../raml/example/cctv/get_cctv_list.json
+      post:
+          description: CCTV 목록 등록
+          queryParameters:
+            cctvId:
+              type: string
+              description: CCTV 아이디
+              required: true
+              example: "cctv_gw_001"
+            cctvName:
+              type: string
+              description: CCTV명
+              required: true
+              example: "구월동001"
+          body:
+            application/json:
+              type: cctv
+          responses:
+            201:
+              description: 정상적으로 CCTV가 등록됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 CCTV 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: CCTV 등록 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+      /{groupMappId}:
+        uriParameters:
+          groupMappId:
+           type: string
+           description: CCTV 매핑 아이디
+           example: "cctv_8y5aIxhY4wP9YY1W1ydN3"
+        put:
+          description: CCTV 수정(전체 수정)
+          queryParameters:
+            cctvId:
+              type: string
+              description: CCTV 아이디
+              required: true
+              example: "cctv_gw_010"
+            cctvName:
+              type: string
+              description: CCTV명
+              required: true
+              example: "구월동010"
+          body:
+            application/json:
+              type: cctv
+          responses:
+            200:
+              description: 정상적으로 CCTV 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 CCTV 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: CCTV 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        patch:
+          description: CCTV 수정(부분 수정)
+          queryParameters:
+            cctvId:
+              type: string
+              description: CCTV 아이디
+              required: true
+              example: "cctv_gw_010"
+            cctvName:
+              type: string
+              description: CCTV명
+              required: true
+              example: "구월동010"
+          body:
+            application/json:
+              type: cctv
+          responses:
+            200:
+              description: 정상적으로 CCTV 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 CCTV 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: CCTV 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        get:
+          description: CCTV 단건 조회
+          responses:
+            200:
+              description: 정상적으로 CCTV 단건이 요청됐을 경우
+              body:
+                application/json:
+                  type: group_mapp_id
+                  example: !include ../raml/example/cctv/get_cctv.json
+        delete:
+          description: CCTV 삭제
+          responses:
+            200:
+              description: 정상적으로 CCTV 삭제됐을 경우
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: CCTV 삭제 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+
+################################################################
+
+#보고서
+/reports:
+  description: 보고서
+  get:
+      description: 보고서 목록 조회
+      queryParameters:
+        token:
+          type: string
+          description: OMS에서 제공하는 사용자 토큰
+          required: true
+          example: "eikCeqKOQWPa0KZwLh8Tii"
+        statEvetOutbSeqn:
+          type: string
+          description: 재난 상황 전파 이력 맵핑 이벤트 아이디
+          required: true
+          example: "E_510YdH21kFib~vYiBlSnrb"
+      responses:
+        200:
+          description: 정상적으로 보고서 목록이 요청됐을 경우
+          body:
+            application/json:
+              type: report_id[]
+              example: !include ../raml/example/report/get_report_list.json
+  post:
+      description: 보고서 등록
+      body:
+        application/json:
+          type: report
+      responses:
+        201:
+          description: 정상적으로 보고서가 등록됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url (reportId 포함 되어있음)
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 보고서 등록 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+  /{reportId}:
+    uriParameters:
+      reportId:
+       type: string
+       description: 보고서 아이디
+       example: "report_6usZO3IXkl68HzEhLZd-RZ"
+    put:
+      description: 보고서 수정(전체 수정)
+      body:
+        application/json:
+          type: report
+      responses:
+        200:
+          description: 정상적으로 보고서가 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 보고서 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 보고서 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    patch:
+      description: 보고서 수정(부분 수정)
+      body:
+        application/json:
+          type: report
+      responses:
+        200:
+          description: 정상적으로 보고서가 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 보고서 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    get:
+      description: 보고서 단건 조회
+      responses:
+        200:
+          description: 정상적으로 보고서 단건이 요청됐을 경우
+          body:
+            application/json:
+              type: report_id
+              example: !include ../raml/example/report/get_report.json
+    delete:
+      description: 보고서 삭제
+      responses:
+        200:
+          description: 정상적으로 보고서가 삭제됐을 경우
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 보고서 삭제 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+#파일
+    /files:
+      get:
+        description: 파일 목록 조회
+        responses:
+          200:
+            description: 정상적으로 파일 목록이 요청됐을 경우
+            body:
+              application/json:
+                type: files[]
+                example: !include ../raml/example/file/get_file_list.json
+      post:
+          description: 파일 등록
+          body:
+            multipart/form-data:
+              properties:
+                fileData:
+                  type: file
+                  description: 첨부 파일(MultipartFile)
+                  required: false
+                  example: include Some File
+          responses:
+            201:
+              description: 정상적으로 파일이 등록됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 파일 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 파일 등록 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+      /{reportFileMappId}:
+        uriParameters:
+          reportFileMappId:
+           type: string
+           description: 파일 아이디
+           example: "file_4arNfkF-Q2zalP9FED~zEb"
+        put:
+          description: 파일 수정(전체 수정)
+          body:
+            application/json:
+              type: file
+          responses:
+            200:
+              description: 정상적으로 파일이 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 파일 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 파일 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        patch:
+          description: 파일 수정(부분 수정)
+          body:
+            application/json:
+              type: file
+          responses:
+            200:
+              description: 정상적으로 파일이 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 파일 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 파일 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        get:
+          description: 파일 단건 조회
+          responses:
+            200:
+              description: 정상적으로 파일 단건이 요청됐을 경우
+              body:
+                application/json:
+                  type: files_id
+                  example: !include ../raml/example/file/get_file.json
+        delete:
+          description: 파일 삭제
+          responses:
+            200:
+              description: 정상적으로 파일이 삭제됐을 경우
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 파일 삭제 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        /download:
+          description: 파일 다운로드
+          get:
+            description: 파일 다운로드
+            responses:
+              200:
+                body:
+                  multipart/form-data:
+                    type: file (MultipartFile fileData)
+                    example: Download Some File
+#경로
+/routes:
+  description: 경로
+  get:
+    description: 경로 목록 조회
+    responses:
+      200:
+        description: 정상적으로 경로 목록이 요청됐을 경우
+        body:
+          application/json:
+            type: route_id[]
+            example: !include ../raml/example/route/get_route_list.json
+  post:
+      description: 경로 등록
+      queryParameters:
+        routeName:
+          type: string
+          description: 경로 명
+          required: true
+          example: "구월_산책로"
+        regUser:
+          type: string
+          description: 등록자 명
+          required: true
+          example: "choiyk"
+        regDate:
+          type: string
+          description: 등록일자
+          required: true
+          example: "202010071641123"
+      body:
+        application/json:
+          type: route
+      responses:
+        201:
+          description: 정상적으로 경로가 등록됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 경로 등록 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+  /{routeId}:
+    uriParameters:
+      routeId:
+       type: string
+       description: 경로 아이디
+       example: "route_6CYwWz3J4ht83D2Ys1ztoh"
+    put:
+      description: 경로 수정(전체 수정)
+      queryParameters:
+        routeName:
+          type: string
+          description: 경로 명
+          required: true
+          example: "구월_산책로"
+        regUser:
+          type: string
+          description: 등록자 명
+          required: true
+          example: "choiyk"
+        regDate:
+          type: string
+          description: 등록일자
+          required: true
+          example: "202010071641123"
+      body:
+        application/json:
+          type: route
+      responses:
+        200:
+          description: 정상적으로 경로가 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 경로 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    patch:
+      description: 경로 수정(부분 수정)
+      queryParameters:
+        routeName:
+          type: string
+          description: 경로 명
+          required: true
+          example: "구월_산책로"
+        regUser:
+          type: string
+          description: 등록자 명
+          required: true
+          example: "choiyk"
+        regDate:
+          type: string
+          description: 등록일자
+          required: true
+          example: "202010071641123"
+      body:
+        application/json:
+          type: route
+      responses:
+        200:
+          description: 정상적으로 경로가 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 경로 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    get:
+      description: 경로 단건 조회
+      responses:
+        200:
+          description: 정상적으로 경로 단건이 요청됐을 경우
+          body:
+            application/json:
+              type: route_id
+              example: !include ../raml/example/route/get_route.json
+    delete:
+      description: 경로 삭제
+      responses:
+        200:
+          description: 정상적으로 경로가 삭제됐을 경우
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 경로 삭제 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+
+    #위치
+    /locations:
+      get:
+        description: 위치 목록 조회
+        responses:
+          200:
+            description: 정상적으로 위치 목록이 요청됐을 경우
+            body:
+              application/json:
+                type: location_id[]
+                example: !include ../raml/example/location/get_location_list.json
+      post:
+          description: 위치 등록
+          queryParameters:
+            lon:
+              type: string
+              description: 경도
+              required: true
+              example: "37.448569"
+            lat:
+              type: string
+              description: 위도
+              required: true
+              example: "126.701917"
+            address:
+              type: string
+              description: 주소
+              required: true
+              example: "인천광역시 남동구 구월동 예술로152번길 9"
+          body:
+            application/json:
+              type: location
+          responses:
+            201:
+              description: 정상적으로 위치가 등록됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 위치 등록 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+      /{locationId}:
+        uriParameters:
+          locationId:
+            type: string
+            description: 위치 아이디
+            example: "location_fjOPnq3E46hbtPJCVFei7t"
+        put:
+          description: 위치 수정(전체 수정)
+          queryParameters:
+            lon:
+              type: string
+              description: 경도
+              required: true
+              example: "37.448569"
+            lat:
+              type: string
+              description: 위도
+              required: true
+              example: "126.701917"
+            address:
+              type: string
+              description: 주소
+              required: true
+              example: "인천광역시 남동구 구월동 예술로152번길 9"
+          body:
+            application/json:
+              type: location
+          responses:
+            200:
+              description: 정상적으로 위치가 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 위치 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        patch:
+          description: 위치 수정(부분 수정)
+          queryParameters:
+            lon:
+              type: string
+              description: 경도
+              required: true
+              example: "37.448569"
+            lat:
+              type: string
+              description: 위도
+              required: true
+              example: "126.701917"
+            address:
+              type: string
+              description: 주소
+              required: true
+              example: "인천광역시 남동구 구월동 예술로152번길 9"
+          body:
+            application/json:
+              type: location
+          responses:
+            200:
+              description: 정상적으로 위치가 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 위치 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        get:
+          description: 위치 단건 조회
+          responses:
+            200:
+              description: 정상적으로 위치 단건이 요청됐을 경우
+              body:
+                application/json:
+                  type: location_id
+                  example: !include ../raml/example/location/get_location.json
+        delete:
+          description: 위치 삭제
+          responses:
+            200:
+              description: 정상적으로 위치가 삭제됐을 경우
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 위치 삭제 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+#재난
+/dstrgroups:
+  description: 재난 그룹
+  get:
+    description: 재난 그룹 목록 조회
+    responses:
+      200:
+        description: 정상적으로 재난 그룹 목록이 요청됐을 경우
+        body:
+          application/json:
+            type: dstr_group_id[]
+            example: !include example/dstrgroup/get_group_list.json
+  post:
+      description: 재난 그룹 등록
+      queryParameters:
+        dstrType:
+          type: string
+          description: 재난 유형 (S->사회 재난 , N->자연 재난)
+          required: true
+          example: "S"
+        dstrGroupName:
+          type: string
+          description: 재난 그룹 명
+          required: true
+          example: "구제역"
+        regDate:
+          type: string
+          description: 등록일자
+          required: true
+          example: "202010071641123"
+        regUser:
+          type: string
+          description: 등록자
+          required: false
+          example: "koojy"
+      body:
+        application/json:
+          type: dstrgroup
+      responses:
+        201:
+          description: 정상적으로 재난 그룹이 등록됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 재난 그룹 등록 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+  /{dstrGroupId}:
+    uriParameters:
+      dstrGroupId:
+       type: string
+       description: 재난 그룹 아이디
+       example: "group_7G5vr9dM4R~bWv~WU3cpBd"
+    put:
+      description: 재난 그룹 수정(전체 수정)
+      queryParameters:
+         dstrType:
+            type: string
+            description: 재난 유형 (S->사회 재난 , N->자연 재난)
+            required: true
+            example: "S"
+         dstrGroupName:
+            type: string
+            description: 재난 그룹 명
+            required: true
+            example: "구제역"
+         regDate:
+            type: string
+            description: 등록일자
+            required: true
+            example: "202010071641123"
+         regUser:
+            type: string
+            description: 등록자
+            required: false
+            example: "koojy"
+      body:
+        application/json:
+          type: dstrgroup
+      responses:
+        200:
+          description: 정상적으로 재난 그룹이 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 경로 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    patch:
+      description: 재난 그룹 수정(부분 수정)
+      queryParameters:
+        dstrType:
+          type: string
+          description: 재난 유형 (S->사회 재난 , N->자연 재난)
+          required: true
+          example: "S"
+        dstrGroupName:
+          type: string
+          description: 재난 그룹 명
+          required: true
+          example: "구제역"
+        regDate:
+          type: string
+          description: 등록일자
+          required: true
+          example: "202010071641123"
+        regUser:
+          type: string
+          description: 등록자
+          required: false
+          example: "koojy"
+      body:
+        application/json:
+          type: dstrgroup
+      responses:
+        200:
+          description: 정상적으로 재난 그룹이 수정됐을 경우
+          headers:
+            Content-Location:
+              description: 생성된 경로 데이터 요청 url
+              displayName: ContentLocation
+              type: string
+              required: false
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 재난 그룹 수정 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    get:
+      description: 재난 그룹 단건 조회
+      responses:
+        200:
+          description: 정상적으로 재난 그룹이 단건으로 요청됐을 경우
+          body:
+            application/json:
+              type: dstr_group_id
+              example: !include ../raml/example/dstrgroup/get_group.json
+    delete:
+      description: 재난 그룹 삭제
+      responses:
+        200:
+          description: 정상적으로 재난 그룹이 삭제됐을 경우
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 재난 그룹 삭제 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    #재난 부서
+    /dstrdpts:
+      get:
+        description: 재난 부서 목록 조회
+        responses:
+          200:
+            description: 정상적으로 재난 부서 목록이 요청됐을 경우
+            body:
+              application/json:
+                type: dstr_dpt_mapp_id[]
+                example: !include example/dstrdpt/get_dpt_list.json
+      post:
+          description: 재난 부서 등록
+          queryParameters:
+            dptId:
+              type: string
+              description: 부서 아이디
+              required: true
+              example: "86Vw3I20AMmbVGpL8vVpy3"
+            dptName:
+              type: string
+              description: 부서 명
+              required: true
+              example: "재난관리부01"
+          body:
+            application/json:
+              type: dstrdpt
+          responses:
+            201:
+              description: 정상적으로 재난 부서가 등록됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 부서 등록 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+      /{dstrDptMappId}:
+        uriParameters:
+          dstrDptMappId:
+            type: string
+            description: 재난 부서 맵핑 아이디
+            example: "dpt_DhT64Swkt2avU6n7zbItL"
+        put:
+          description: 재난 부서 수정(전체 수정)
+          queryParameters:
+            dptId:
+              type: string
+              description: 부서 아이디
+              required: true
+              example: "86Vw3I20AMmbVGpL8vVpy3"
+            dptName:
+              type: string
+              description: 부서 명
+              required: true
+              example: "재난관리부01"
+          body:
+            application/json:
+              type: dstrdpt
+          responses:
+            200:
+              description: 정상적으로 재난 부서가 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 부서 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        patch:
+          description: 재난 부서 수정(부분 수정)
+          queryParameters:
+            dptId:
+              type: string
+              description: 부서 아이디
+              required: true
+              example: "86Vw3I20AMmbVGpL8vVpy3"
+            dptName:
+              type: string
+              description: 부서 명
+              required: true
+              example: "재난관리부01"
+          body:
+            application/json:
+              type: dstrdpt
+          responses:
+            200:
+              description: 정상적으로 재난 부서가 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 부서 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        get:
+          description: 재난 부서 단건 조회
+          responses:
+            200:
+              description: 정상적으로 재난 부서가 단건으로 요청됐을 경우
+              body:
+                application/json:
+                  type: dstr_dpt_mapp_id
+                  example: !include example/dstrdpt/get_dpt.json
+        delete:
+          description: 재난 부서 삭제
+          responses:
+            200:
+              description: 정상적으로 재난 부서가 삭제됐을 경우
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 부서 삭제 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+    #재난 이력
+    /dstrhistories:
+      get:
+        description: 재난 이력 조회
+        responses:
+          200:
+            description: 정상적으로 재난 이력 목록이 요청됐을 경우
+            body:
+              application/json:
+                type: dstr_hist_id[]
+                example: !include ../raml/example/dstrhistory/get_history_list.json
+      post:
+          description: 재난 이력 등록
+          queryParameters:
+           dstrHistTitle:
+             type: string
+             description: 재난 이력 제목
+             required: false
+             example: "재난이력01"
+           dstrHistCont:
+             type: string
+             description: 재난 이력 내용
+             required: false
+             example: "내용04"
+           deadCount:
+             type: string
+             description: 사망 인원
+             required: false
+             example: "130"
+           injuredCount:
+             type: string
+             description: 부상 인원
+             required: false
+             example: "30"
+           missingCount:
+             type: string
+             description: 실종 인원
+             required: false
+             example: "27"
+           damageAmount:
+             type: string
+             description: 재산 피해
+             required: false
+             example: "20억 원"
+           occurDate:
+             type: string
+             description: 재난 발생일
+             required: false
+             example: "202010091626415"
+           regDate:
+             type: string
+             description: 재난 이력 등록일
+             required: false
+             example: "202010071626123"
+           regUser:
+             type: string
+             description: 재난 이력 등록자
+             required: false
+             example: "김영희"
+          body:
+            application/json:
+              type: dstrhistory
+          responses:
+            201:
+              description: 정상적으로 재난 이력이 등록됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 이력 등록 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+      /{dstrHistId}:
+        uriParameters:
+          dstrHistId:
+            type: string
+            description: 재난 이력 아이디
+            example: "history_6HkJcHSy4jC8d6~ckR5LSC"
+        put:
+          description: 재난 이력 수정(전체 수정)
+          queryParameters:
+            dstrHistTitle:
+             type: string
+             description: 재난 이력 제목
+             required: false
+             example: "재난이력01"
+            dstrHistCont:
+             type: string
+             description: 재난 이력 내용
+             required: false
+             example: "내용04"
+            deadCount:
+             type: string
+             description: 사망 인원
+             required: false
+             example: "130"
+            injuredCount:
+             type: string
+             description: 부상 인원
+             required: false
+             example: "30"
+            missingCount:
+             type: string
+             description: 실종 인원
+             required: false
+             example: "27"
+            damageAmount:
+             type: string
+             description: 재산 피해
+             required: false
+             example: "20억 원"
+            occurDate:
+             type: string
+             description: 재난 발생일
+             required: false
+             example: "202010091626415"
+            regDate:
+             type: string
+             description: 재난 이력 등록일
+             required: false
+             example: "202010071626123"
+            regUser:
+             type: string
+             description: 재난 이력 등록자
+             required: false
+             example: "김영희"
+          body:
+            application/json:
+              type: dstrhistory
+          responses:
+            200:
+              description: 정상적으로 재난 이력이 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 이력 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        patch:
+          description: 재난 이력 수정(부분 수정)
+          queryParameters:
+            dstrHistTitle:
+             type: string
+             description: 재난 이력 제목
+             required: false
+             example: "재난이력01"
+            dstrHistCont:
+             type: string
+             description: 재난 이력 내용
+             required: false
+             example: "내용04"
+            deadCount:
+             type: string
+             description: 사망 인원
+             required: false
+             example: "130"
+            injuredCount:
+             type: string
+             description: 부상 인원
+             required: false
+             example: "30"
+            missingCount:
+             type: string
+             description: 실종 인원
+             required: false
+             example: "27"
+            damageAmount:
+             type: string
+             description: 재산 피해
+             required: false
+             example: "20억 원"
+            occurDate:
+             type: string
+             description: 재난 발생일
+             required: false
+             example: "202010091626415"
+            regDate:
+             type: string
+             description: 재난 이력 등록일
+             required: false
+             example: "202010071626123"
+            regUser:
+             type: string
+             description: 재난 이력 등록자
+             required: false
+             example: "김영희"
+          body:
+            application/json:
+              type: dstrhistory
+          responses:
+            200:
+              description: 정상적으로 재난 이력이 수정됐을 경우
+              headers:
+                Content-Location:
+                  description: 생성된 위치 데이터 요청 url
+                  displayName: ContentLocation
+                  type: string
+                  required: false
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 이력 수정 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+        get:
+          description: 재난 이력 단건 조회
+          responses:
+            200:
+              description: 정상적으로 재난 이력이 단건으로 요청됐을 경우
+              body:
+                application/json:
+                  type: dstr_hist_id
+                  example: !include ../raml/example/dstrhistory/get_history.json
+        delete:
+          description: 재난 이력 삭제
+          responses:
+            200:
+              description: 정상적으로 재난 이력이 삭제됐을 경우
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 이력 삭제 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+      #재난 이력 관리자
+        /dstrmanagers:
+          get:
+            description: 재난 이력 관리자 목록 조회
+            responses:
+              200:
+                description: 정상적으로 재난 이력 관리자 목록이 요청됐을 경우
+                body:
+                  application/json:
+                    type: manager_mapp_id[]
+                    example: !include ../raml/example/dstrmanager/get_manager_list.json
+          post:
+              description: 재난 이력 관리자 등록
+              queryParameters:
+               managerContact:
+                 type: string
+                 description: 관리자 연락처
+                 required: false
+                 example: "010-1111-2222"
+               managerName:
+                 type: string
+                 description: 관리자 명
+                 required: false
+                 example: "구지윤"
+               dptId:
+                 type: string
+                 description: 부서 아이디
+                 required: false
+                 example: "86Vw3I20AMmbVGpL8vVpy3"
+              body:
+                application/json:
+                  type: dstrmanager
+              responses:
+                201:
+                  description: 정상적으로 재난 이력 관리자가 등록됐을 경우
+                  headers:
+                    Content-Location:
+                      description: 생성된 위치 데이터 요청 url
+                      displayName: ContentLocation
+                      type: string
+                      required: false
+                  body:
+                    application/json:
+                      properties:
+                        message:
+                          description: 재난 이력 관리자 등록 결과 메세지
+                          type: string
+                          required: false
+                          example: !include ../raml/example/common/message_success.json
+          /{managerMappId}:
+            uriParameters:
+              managerMappId:
+                type: string
+                description: 재난 이력 관리자 아이디
+                example: "manager_3rxmc7RZkU6bUdg05lKrPj"
+            put:
+              description: 재난 이력 관리자 수정(전체 수정)
+              queryParameters:
+                managerContact:
+                  type: string
+                  description: 관리자 연락처
+                  required: false
+                  example: "010-1111-2222"
+                managerName:
+                  type: string
+                  description: 관리자 명
+                  required: false
+                  example: "구지윤"
+                dptId:
+                  type: string
+                  description: 부서 아이디
+                  required: false
+                  example: "86Vw3I20AMmbVGpL8vVpy3"
+              body:
+                application/json:
+                  type: dstrmanager
+              responses:
+                200:
+                  description: 정상적으로 재난 이력 관리자가 수정됐을 경우
+                  headers:
+                    Content-Location:
+                      description: 생성된 위치 데이터 요청 url
+                      displayName: ContentLocation
+                      type: string
+                      required: false
+                  body:
+                    application/json:
+                      properties:
+                        message:
+                          description: 재난 이력 관리자 수정 결과 메세지
+                          type: string
+                          required: false
+                          example: !include ../raml/example/common/message_success.json
+            patch:
+              description: 재난 이력 관리자 수정(부분 수정)
+              queryParameters:
+                managerContact:
+                  type: string
+                  description: 관리자 연락처
+                  required: false
+                  example: "010-1111-2222"
+                managerName:
+                  type: string
+                  description: 관리자 명
+                  required: false
+                  example: "구지윤"
+                dptId:
+                  type: string
+                  description: 부서 아이디
+                  required: false
+                  example: "86Vw3I20AMmbVGpL8vVpy3"
+              body:
+                application/json:
+                  type: dstrmanager
+              responses:
+                200:
+                  description: 정상적으로 재난 이력 관리자가 수정됐을 경우
+                  headers:
+                    Content-Location:
+                      description: 생성된 위치 데이터 요청 url
+                      displayName: ContentLocation
+                      type: string
+                      required: false
+                  body:
+                    application/json:
+                      properties:
+                        message:
+                          description: 재난 이력 관리자 수정 결과 메세지
+                          type: string
+                          required: false
+                          example: !include ../raml/example/common/message_success.json
+            get:
+              description: 재난 이력 관리자 단건 조회
+              responses:
+                200:
+                  description: 정상적으로 재난 이력 관리자가 단건 요청됐을 경우
+                  body:
+                    application/json:
+                      type: manager_mapp_id
+                      example: !include ../raml/example/dstrmanager/get_manager.json
+            delete:
+              description: 재난 이력 관리자 삭제
+              responses:
+                200:
+                  description: 정상적으로 재난 이력 관리자가 삭제됐을 경우
+                  body:
+                    application/json:
+                      properties:
+                        message:
+                          description: 재난 이력 관리자 삭제 결과 메세지
+                          type: string
+                          required: false
+                          example: !include ../raml/example/common/message_success.json
+
+#전파
+/dstrevets:
+  description: 재난 상황 이력
+  get:
+    description: 재난 상황 이력 목록 조회
+    queryParameters:
+      statEvetOutbSeqn :
+        displayName: StatEvent Outbreak Sequence
+        type: string
+        required: false
+        description: 이벤트 아이디
+        example : "E_eqHPDb30k8obbBG44YA9AX"
+    responses:
+      200:
+        description: 정상적으로 재난 상황 이력 목록이 요청됐을 경우
+        body:
+          application/json:
+            type: dstrEvetHist_id[]
+  post:
+    description: 재난 상황 이력 등록
+    queryParameters:
+      title:
+        type: string
+        description: 재난 상황 이력 제목
+        required: false
+        example: "화재발생"
+      content:
+        type: string
+        description: 재난 상황 이력 내용
+        required: false
+        example: "화재가 발생했습니다."
+      propagationTarget:
+        type: string
+        description: 전파대상(아래 예시 중 적절한 경우를 선택할 것)
+        required: false
+      propagationTarget_sample001:
+        type: string
+        description: 전파대상(전파의 경우 ... type=1)
+        required: false
+        example: "[{systemCd: '001', name: '홈페이지'}, {systemCd: '002', name: '미추홀콜센터'}]"
+      propagationTarget_sample002:
+        type: string
+        description: 전파대상(공유의 경우 ... type=2)
+        required: false
+        example: "[{userLoginId: 'eseLoginId001', userName: '이에스이 사용자 001', userId: 'shASfchw8crfakjfcnw', cpNo: '01012341234'}]"
+      propagationTarget_sample003:
+        type: string
+        description: 전파대상(SMS의 경우 ... type=3)
+        required: false
+        example: "[{userLoginId: 'eseLoginId001', userName: '이에스이 사용자 001', userId: 'shASfchw8crfakjfcnw', cpNo: '01012341234'}]"
+      statEvetOutbSeqn:
+        type: string
+        description: 상황 이벤트 발생 시퀀스(아이디)
+        required: false
+        example: "E_83qharusfdshanwiuyct"
+      type:
+        type: number
+        description: 재난 상황 이력 종류(전파=1, 공유=2, SMS=3)
+        required: false
+        example: "E_83qharusfdshanwiuyct"
+    body:
+    application/json:
+      type: dstrEvetHist
+    responses:
+      201:
+        description: 정상적으로 재난 상황 이력이 등록됐을 경우
+        headers:
+          Content-Location:
+            description: 생성된 재난 상황 이력 데이터 요청 URL
+            displayName: ContentLocation
+            type: string
+            required: false
+        body:
+          application/json:
+            properties:
+              message:
+                description: 재난 상황 이력 등록 결과 메세지
+                type: string
+                required: false
+                example: !include ../raml/example/common/message_success.json
+  /{dstrEvetHistId}:
+    uriParameters:
+      dstrEvetHistId:
+        type: string
+        description: 재난 상황 이력 아이디
+        example: "dstr_6usZO3IXkl68HzEhLZd-RZ"
+    get:
+      description: 재난 상황 이력 단건 조회
+      responses:
+        200:
+          description: 정상적으로 재난 상황 이력 단건이 요청됐을 경우
+          body:
+            application/json:
+              type: dstrEvetHist_id
+    delete:
+      description: 재난 상황 이력 삭제
+      responses:
+        200:
+          description: 정상적으로 재난 상황 이력이 삭제됐을 경우
+          body:
+            application/json:
+              properties:
+                message:
+                  description: 재난 상황 이력 삭제 결과 메세지
+                  type: string
+                  required: false
+                  example: !include ../raml/example/common/message_success.json
+    /files:
+      get:
+        description: 재난 상황 이력 첨부파일 목록 조회
+        responses:
+          200:
+            description: 정상적으로 재난 상황 이력 첨부파일 목록이 요청됐을 경우
+            body:
+              application/json:
+                type: dstrEvetFile_id[]
+      post:
+        description: 재난 상황 이력 첨부파일 등록
+        body:
+          multipart/form-data:
+            properties:
+              fileData:
+                type: file
+                description: 첨부 파일(MultipartFile)
+                required: false
+                example: include Some File
+        responses:
+          201:
+            description: 정상적으로 재난 상황 이력 첨부파일이 등록됐을 경우
+            headers:
+              Content-Location:
+                description: 생성된 재난 상황 이력 첨부파일 데이터 요청 URL
+                displayName: ContentLocation
+                type: string
+                required: false
+            body:
+              application/json:
+                properties:
+                  message:
+                    description: 재난 상황 이력 첨부파일 등록 결과 메세지
+                    type: string
+                    required: false
+                    example: !include ../raml/example/common/message_success.json
+      /{dstrEvetHistFileMappId}:
+        /download:
+          description: 파일 다운로드
+          get:
+            description: 파일 다운로드
+            responses:
+              200:
+                body:
+                  multipart/form-data:
+                    type: file (MultipartFile fileData)
+                    example: Download Some File
+        delete:
+          description: 재난 상황 이력 첨부파일 삭제
+          responses:
+            200:
+              description: 정상적으로 재난 상황 이력 첨부파일이 삭제됐을 경우
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 상황 이력 첨부파일 삭제 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+    /cctvs:
+      get:
+        description: 재난 상황 이력 CCTV 목록 조회
+        responses:
+          200:
+            description: 정상적으로 재난 상황 이력 CCTV 목록이 요청됐을 경우
+            body:
+              application/json:
+                type: dstrEvetCctv_id[]
+      post:
+        description: 재난 상황 이력 CCTV 등록
+        body:
+        application/json:
+          type: dstrEvetCctv
+        responses:
+          201:
+            description: 정상적으로 재난 상황 이력 CCTV가 등록됐을 경우
+            headers:
+              Content-Location:
+                description: 생성된 재난 상황 이력 CCTV 데이터 요청 URL
+                displayName: ContentLocation
+                type: string
+                required: false
+            body:
+              application/json:
+                properties:
+                  message:
+                    description: 재난 상황 이력 CCTV 등록 결과 메세지
+                    type: string
+                    required: false
+                    example: !include ../raml/example/common/message_success.json
+      /{dstrEvetHistCctvMappId}:
+        delete:
+          description: 재난 상황 이력 CCTV 삭제
+          responses:
+            200:
+              description: 정상적으로 재난 상황 이력 CCTV가 삭제됐을 경우
+              body:
+                application/json:
+                  properties:
+                    message:
+                      description: 재난 상황 이력 CCTV 삭제 결과 메세지
+                      type: string
+                      required: false
+                      example: !include ../raml/example/common/message_success.json
+
+#청소차량
+/cleancars:
+  description: 청소차량
+  #전체 청소차량 실시간 위치
+  get:
+    description: 전체 청소차량 실시간 위치
+    responses:
+      200:
+        description: 정상적으로 청소차량 실시간 위치가 요청됐을 경우
+        body:
+          application/json:
+            type: cleancar_realtime[]
+            example: !include example/cleancar/get_cleancar_realtime.json
+  #특정 청소차량 이력
+  /{vin}:
+    uriParameters:
+      vin:
+        type: string
+        description: 차량번호
+        required: false
+        example: "00가0000"
+    get:
+      description: 특정 청소차량 이력
+      responses:
+        200:
+          description: 정상적으로 특정 청소차량 이력이 요청됐을 경우
+          body:
+            application/json:
+              type: cleancar_history[]
+              example: !include example/cleancar/get_cleancar_history.json

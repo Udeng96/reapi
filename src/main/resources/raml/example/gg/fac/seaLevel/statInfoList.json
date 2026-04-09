@@ -1,0 +1,36 @@
+[
+  {
+    "fac": {
+      "facId": "테스트 시설물 id",
+      "facNm": "테스트 시설물",
+      "addr": "시설물 위치",
+      "lat": 37.22222,
+      "lng": 127.22222,
+      "type": "seaLevel",
+      "useYn": true,
+      "state": "ON",
+      "updDtm": "20220302142822",
+      "data": null
+    },
+    "data": [
+      {
+        "date": "20220302151710",
+        "interest": 100,
+        "caution": 100,
+        "alertness": 100,
+        "danger": 100,
+        "preValue": 100,
+        "realValue": 100
+      },
+      {
+        "date": "20220302151710",
+        "interest": 100,
+        "caution": 100,
+        "alertness": 100,
+        "danger": 100,
+        "preValue": 100,
+        "realValue": 100
+      }
+    ]
+  }
+]

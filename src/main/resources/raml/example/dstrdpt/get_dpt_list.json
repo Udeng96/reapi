@@ -1,0 +1,26 @@
+[
+  {
+    "dstrDptMappId": "dpt_7ilbMp-9kNt92vvKxm99yz",
+    "dstrGroupId": "group_7G5vr9dM4R~bWv~WU3cpBd",
+    "dptId": "86Vw3I20AMmbVGpL8vVpy3",
+    "dptName": "재난관리부03"
+  },
+  {
+    "dstrDptMappId": "dpt_bu9R91re4B3a7ykHC9PDgY",
+    "dstrGroupId": "group_7G5vr9dM4R~bWv~WU3cpBd",
+    "dptId": "86Vw3I20AMmbVGpL8vVpy4",
+    "dptName": "재난관리부01"
+  },
+  {
+    "dstrDptMappId": "dpt_DhT64Swkt2avU6n7zbItL",
+    "dstrGroupId": "group_7G5vr9dM4R~bWv~WU3cpBd",
+    "dptId": "86Vw3I20AMmbVGpL8vVpy5",
+    "dptName": "재난관리부02"
+  },
+  {
+    "dstrDptMappId": "dpt_fH~3xCumkji8JDZ-EkPOAb",
+    "dstrGroupId": "group_7G5vr9dM4R~bWv~WU3cpBd",
+    "dptId": "86Vw3I20AMmbVGpL8vVpy3",
+    "dptName": "재난관리부04"
+  }
+]

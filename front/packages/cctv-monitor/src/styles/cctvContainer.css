@@ -1,0 +1,296 @@
+/*cctvContainer style*/
+.monitor.cctv_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 1656px;
+  height: 936px;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 101px;
+  left: 261px;
+  -webkit-transition: top left 0.5s ease;
+  transition: top left 0.5s ease;
+}
+
+.monitor.cctv_container.drag_state {
+  border-color: rgba(93, 115, 240, 0.9);
+}
+
+.monitor.cctv_container .cctv_frame {
+  width: 548px;
+  height: 308px;
+  border: 1px solid transparent;
+}
+
+.monitor.cctv_container .cctv_frame.drag_state {
+  border-color: #5d73f0;
+}
+
+.monitor.cctv_container .cctv_frame .cctv_header {
+  width: 100%;
+  height: 22px;
+  font-family: "NotoSansCJKL";
+  font-size: 11px;
+  letter-spacing: 0.28px;
+  color: #e1e2e3;
+  background-color: #1c1d29;
+  padding: 0 14px;
+  line-height: 2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.monitor.cctv_container .cctv_frame .cctv_body {
+  width: 100%;
+  height: calc(100% - 22px);
+  position: relative;
+  -webkit-box-shadow: inset 0 0 99px 0 rgba(0, 0, 0, 0.55);
+  box-shadow: inset 0 0 99px 0 rgba(0, 0, 0, 0.55);
+  background-color: #15161f;
+}
+
+.monitor.cctv_container .cctv_frame .cctv_in {
+  width: 100%;
+  height: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .cctv_default_area {
+  width: 278px;
+  height: 73.4px;
+  background: url("/static/images/dark/page/icon/monitor/icon_drag&drop.png") no-repeat;
+  background-position: center top;
+  padding-top: 38px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.monitor.cctv_container .cctv_frame .cctv_default_area .cctv_default_message {
+  font-family: "NotoSansCJKL";
+  font-size: 11px;
+  text-align: center;
+  color: #9698a3;
+  line-height: 1.6;
+}
+
+.monitor.cctv_container .cctv_frame .no_signal_area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.monitor.cctv_container .cctv_frame .no_signal_area .no_signal_message {
+  font-family: "NotoSansCJKR";
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  letter-spacing: 0.33px;
+  text-align: center;
+  color: #ced1e0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area {
+  width: 100%;
+  height: 100%;
+  border: solid 1px rgba(10, 11, 15, 0.33);
+  background-color: rgba(10, 11, 15, 0.33);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area::before {
+  content: "";
+  display: block;
+  width: 11.2%;
+  height: 16%;
+  background: url("/static/images/dark/page/img/monitor/img_ptz_mark.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 7%;
+  right: 4.5%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group {
+  width: 54.5%;
+  height: 86%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct {
+  width: 15.35%;
+  height: 20.25%;
+  /* height: 27.25%; */
+  position: absolute;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_up {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_up_normal.png") no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_up:hover {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_up_hover.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_up:active {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_up_click.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_down {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_down_normal.png") no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_down:hover {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_down_hover.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_down:active {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_down_click.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_left {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_left_normal.png") no-repeat;
+  background-size: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_left:hover {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_left_hover.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_left:active {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_left_click.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_right {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_right_normal.png") no-repeat;
+  background-size: 100%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_right:hover {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_right_hover.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_direct_group .btn_ptz_direct.ptz_right:active {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_right_click.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 7.8%;
+  height: 37.2%;
+  /* height: 48.2%; */
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group .btn_ptz_zoom {
+  width: 100%;
+  height: 45%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group .btn_ptz_zoom.ptz_plus {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_plus_normal.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group .btn_ptz_zoom.ptz_plus:hover {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_plus_hover.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group .btn_ptz_zoom.ptz_plus:active {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_plus_click.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group .btn_ptz_zoom.ptz_minus {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_minus_normal.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group .btn_ptz_zoom.ptz_minus:hover {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_minus_hover.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container .cctv_frame .ptz_control_area .btn_ptz_zoom_group .btn_ptz_zoom.ptz_minus:active {
+  background: url("/static/images/dark/page/btn/monitor/btn_ptz_minus_click.png") no-repeat;
+  background-size: 100%;
+}
+
+.monitor.cctv_container.full_size {
+  width: 1920px;
+  height: 1080px;
+  gap: 0;
+  top: 0;
+  left: 0;
+}
+
+.monitor.cctv_container.full_size.drag_state {
+  border-color: transparent;
+}
+
+.monitor.cctv_container.full_size .cctv_frame {
+  width: 639px;
+  height: 358px;
+}
+
+.monitor.cctv_container.full_size .cctv_frame.drag_state {
+  border-color: transparent;
+}

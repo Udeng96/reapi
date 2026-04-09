@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="1 seconds">
+
+	<evaluator name="CALLER_DISPLAY_EVAL">
+		<expression>event.getLevel().toInteger() != Level.INFO.toInteger() &amp;&amp; event.getLevel().toInteger() != Level.WARN.toInteger()</expression>
+	</evaluator>
+
+	<!-- Appenders -->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%highlight(%-5p): [%d{yyyy-MM-dd HH:mm:ss:mmm}] %cyan(%c) - %m%n%caller{2, CALLER_DISPLAY_EVAL}</pattern>
+		</encoder>
+	</appender>
+
+	<!-- Appenders -->
+	<appender name="frameworkconsole" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c{36} - %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 일반 로그 파일 정책-->
+    <appender name="COM_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <prudent>true</prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${API_HOME}/log/entire/apiServer_LOG.%d{yyyy-MM-dd}.log
+            </fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+        </encoder>
+    </appender>
+
+	<!-- 이벤트 로그  파일 정책-->
+	<appender name="EVENT_DISASTER_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/event/disaster_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="EVENT_EARTHQUAKE_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/event/earthquake/event_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="EVENT_NDMS_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/event/ndms/event_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!--data store-->
+<!--	날씨-->
+	<appender name="DATA_WEATHER_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/dataStored/weather/data_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+<!--지진-->
+	<appender name="DATA_EARTHQUAKE_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/dataStored/earthquake/data_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+	<!--조위(tide)-->
+	<appender name="DATA_TIDE_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/dataStored/tide/data_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+
+<!--http 요청-->
+<!--get-->
+	<appender name="HTTP_GET_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/http/get/get_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+	<!--	post-->
+	<appender name="HTTP_POST_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/http/post/post_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+
+
+
+	<appender name="MSG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${API_HOME}/log/msg/MSG_LOG.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-5p: [%d{yyyy-MM-dd HH:mm:ss:mmm}] %c - %m%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- Spring framewrok Loggers -->
+	<logger name="org.springframework" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="frameworkconsole" />
+	</logger>
+
+	<logger name="org.springframework.web.servlet.DispatcherServlet" additivity="false">
+		<level value="info" />
+		<appender-ref ref="frameworkconsole" />
+	</logger>
+
+	<logger name="org.springframework.context.support.ReloadableResourceBundleMessageSource" additivity="false">
+		<level value="info" />
+		<appender-ref ref="frameworkconsole" />
+	</logger>
+
+	<!-- Hibernate logger -->
+	<logger name="org.hibernate" additivity="false">
+		<level value="info"/>
+		<appender-ref ref="frameworkconsole"/>
+	</logger>
+
+	<!-- Hibernate logger -->
+	<logger name="org.hibernate.type" additivity="false">
+		<level value="info"/>
+		<appender-ref ref="frameworkconsole"/>
+	</logger>
+
+	<!-- com.eseict logger -->
+	<logger name="com.eseict" additivity="false">
+		<level value="debug"/>
+		<appender-ref ref="frameworkconsole"/>
+		<appender-ref ref="COM_FILE"/>
+	</logger>
+
+	<logger name="jdbc" level="OFF"/>
+
+	<logger name="jdbc.sqlonly" level="DEBUG" additivity="false">>
+		<appender-ref ref="frameworkconsole" />
+	</logger>
+
+	<logger name="jdbc.resultsettable" level="DEBUG" additivity="false">>
+		<appender-ref ref="frameworkconsole" />
+	</logger>
+
+	<logger name="jdbc.sqltiming" level="DEBUG" additivity="false">>
+		<appender-ref ref="frameworkconsole" />
+	</logger>
+
+
+
+
+
+	<logger name="HTTP_GET_FILE"  additivity="false">
+		<level value = "info"/>
+		<appender-ref ref="HTTP_GET_FILE" />
+	</logger>
+	<logger name="HTTP_POST_FILE"  additivity="false">
+		<level value = "info"/>
+		<appender-ref ref="HTTP_POST_FILE" />
+	</logger>
+
+	<!-- http CALL -->
+
+
+
+<!--	추후 socket 등을 연계하고 난 후 로그를 해당 명칭으로 지정-->
+	<logger name="com.eseict.apiServer.proc" additivity="false">
+		<level value = "info"></level>
+		<appender-ref ref = "frameworkconsole"></appender-ref>
+		<appender-ref ref = "MSG_FILE"></appender-ref>
+	</logger>
+
+
+	<!-- Root Logger -->
+	<root level="info">
+		<appender-ref ref="frameworkconsole"/>
+		<appender-ref ref="COM_FILE"/>
+	</root>
+
+</configuration>

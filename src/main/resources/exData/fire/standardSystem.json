@@ -1,0 +1,42 @@
+{
+  "fireCar": [
+    {
+      "id": "fireCar ID1",
+      "nm": "차넘버 1",
+      "rtsp": "http://localhost:3000/rtsp/차넘버1"
+    },
+    {
+      "id": "fireCar ID2",
+      "nm": "차넘버 2",
+      "rtsp": "http://localhost:3000/rtsp/차넘버2"
+    },
+    {
+      "id": "fireCar ID1",
+      "nm": "차넘버 3",
+      "rtsp": "http://localhost:3000/rtsp/차넘버3"
+    },
+    {
+      "id": "fireCar ID2",
+      "nm": "많이 긴 차넘버 10000000000000",
+      "rtsp": "http://localhost:3000/rtsp/많이 긴 차넘버 10000000000000"
+    }
+  ],
+  "liveChannel": [
+    {
+      "id": "liveChannel ID1",
+      "nm": "라이브 1",
+      "rtsp": "http://localhost:3000/rtsp/1"
+    },
+    {
+      "id": "liveChannel ID2",
+      "nm": "라이브 2",
+      "rtsp": "http://localhost:3000/rtsp/2"
+    }
+  ],
+  "fireCarAll": [
+    "차넘버 1",
+    "차넘버 2",
+    "차넘버 3",
+    "많이 긴 차넘버 10000000000000"
+  ]
+}

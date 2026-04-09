@@ -1,0 +1,87 @@
+{
+  "result": "OK",
+  "data": {
+    "token": "74fAIFtEksSab8BgOWq2HY",
+    "userId": "ddLRSv4LQ74abYtsoDQCZD",
+    "userName": "강성진",
+    "loginId": "kangdiv",
+    "mobile": "010-5737-3334",
+    "phone": "",
+    "email": "",
+    "grupId": "bby4G5fdQl-b3XkriNfmrG",
+    "orgnId": "cwXoz27Y4ESazJh69zmMFX",
+    "dptId": "eA5Oq9Ip4U~bQPbpbEborU",
+    "userGd": "001",
+    "clientCd": "",
+    "siteCd": "",
+    "dptInfo": {
+      "dptId": "eA5Oq9Ip4U~bQPbpbEborU",
+      "dptNm": "이에스이관리자",
+      "dptCd": "AAETEST",
+      "dptDesc": "",
+      "orgnId": "cwXoz27Y4ESazJh69zmMFX",
+      "clientCd": "",
+      "siteCd": "",
+      "userInfoList": []
+    },
+    "clientInfo": [
+      {
+        "clientCd": "BPA",
+        "clientNm": "부산항만공사",
+        "clientInfo": "",
+        "creDtm": "20200108154106146",
+        "creDtmDisplay": "",
+        "creMn": "플랫폼관리자",
+        "chgDtm": "20200405182140631",
+        "chgDtmDisplay": "",
+        "chgMn": "sontest",
+        "useYn": "Y",
+        "clientDisplayNm": "부산항만공사(BPA)"
+      },
+      {
+        "clientCd": "SSS",
+        "clientNm": "서울시",
+        "clientInfo": "서울시 전체",
+        "creDtm": "20191128170145710",
+        "creDtmDisplay": "",
+        "creMn": "관리자",
+        "chgDtm": "20200406153002162",
+        "chgDtmDisplay": "",
+        "chgMn": "플랫폼관리자",
+        "useYn": "Y",
+        "serverFileName": "CI_asdasdasdasdqwe_dvmt8KKnQRMbzSO03ZPXpr.png",
+        "originalFileName": "bltDot_gray.png",
+        "clientDisplayNm": "서울시(SSS)"
+      }
+    ],
+    "siteList": [
+      {
+        "siteCd": "2525525",
+        "clientCd": "BPA",
+        "siteNm": "2151251",
+        "siteInfo": "",
+        "creDtm": "20210913174121129",
+        "creMn": "sontest",
+        "chgDtm": "20210915104824418",
+        "chgMn": "sontest",
+        "expDtm": "",
+        "rotation": "",
+        "accidentOccurredDtm": "",
+        "siteDisplayNm": "2151251 (2525525)"
+      },
+      {
+        "siteCd": "ANSJ",
+        "clientCd": "ASJ",
+        "siteNm": "ANSJ",
+        "siteInfo": "",
+        "creDtm": "20220117160825733",
+        "creMn": "안성진",
+        "expDtm": "",
+        "rotation": "",
+        "accidentOccurredDtm": "",
+        "siteDisplayNm": "ANSJ (ANSJ)"
+      }
+    ]
+  },
+  "message": "요청 성공"
+}

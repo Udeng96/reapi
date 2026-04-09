@@ -1,0 +1,314 @@
+/*gisIcon style*/
+.gis_icon_area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gis_icon_area .gis_icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  z-index: 3000;
+  cursor: pointer;
+}
+
+.gis_icon_area .gis_icon.cctv_icon {
+  background: url("../../images/dark/page/icon/gis/icon_cctv_normal.png") no-repeat;
+}
+
+.gis_icon_area .gis_icon.cctv_icon:hover {
+  background: url("../../images/dark/page/icon/gis/icon_cctv_hover.png") no-repeat;
+}
+
+.gis_icon_area .gis_icon.cctv_icon.active {
+  background: url("../../images/dark/page/icon/gis/icon_cctv_selected.png") no-repeat;
+}
+
+.gis_icon_area .gis_icon.cctv_icon.active:hover {
+  background: url("../../images/dark/page/icon/gis/icon_cctv_selected.png") no-repeat;
+}
+
+.gis_icon_area .gis_icon.cctv_icon.active .location_icon {
+  display: block;
+}
+
+.gis_icon_area .gis_icon.cctv_icon .location_icon {
+  bottom: 7px;
+  left: 5px;
+}
+
+.gis_icon_area .cctv_network_icon {
+  width: 45px;
+  height: 62px;
+  position: absolute;
+  z-index: 3000;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.gis_icon_area .cctv_network_icon.locate_icon_0 {
+  background: url("../../images/dark/page/icon/gis/icon_cctvNetwork_locating_event.png") no-repeat;
+}
+
+.gis_icon_area .cctv_network_icon.locate_icon_1 {
+  background: url("../../images/dark/page/icon/gis/icon_cctvNetwork_locating_castNet.png") no-repeat;
+}
+
+.gis_icon_area .numbering_img {
+  width: 108px;
+  height: 86px;
+  /*width: 130px;*/
+  /*height: 100px;*/
+  position: absolute;
+}
+
+.gis_icon_area .numbering_img.type_0_1 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_event_numbering_1.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_0_2 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_event_numbering_2.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_0_3 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_event_numbering_3.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_0_4 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_event_numbering_4.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_0_5 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_event_numbering_5.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_0_6 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_event_numbering_6.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_1_1 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_castNet_numbering_1.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_1_2 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_castNet_numbering_2.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_1_3 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_castNet_numbering_3.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_1_4 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_castNet_numbering_4.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_1_5 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_castNet_numbering_5.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .numbering_img.type_1_6 {
+  background: url("../../images/dark/page/img/img_cctvNetwork_castNet_numbering_6.png") no-repeat;
+  background-size: cover;
+}
+
+.gis_icon_area .location_icon {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+}
+
+.gis_icon_area .location_icon.type_common {
+  background: url("../../images/dark/page/icon/gis/icon_location_common.png") no-repeat;
+}
+
+.gis_icon_area .location_icon.type_mobile_live {
+  background: url("../../images/dark/page/icon/gis/icon_location_mobileLive.png") no-repeat;
+}
+
+.gis_icon_area .location_icon.type_location{
+  background: url("../../images/dark/page/icon/gis/icon_location_location.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  z-index: 3000;
+  cursor: pointer;
+}
+
+.gis_icon_area .mobile_icon.type_live_video {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_liveVideo_normal.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon.type_live_video:hover {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_liveVideo_hover.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon.type_live_video.active {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_liveVideo_active.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon.type_live_video.active:hover {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_liveVideo_active.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon.type_past_video {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_pastVideo_normal.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon.type_past_video:hover {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_pastVideo_hover.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon.type_past_video.active {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_pastVideo_active.png") no-repeat;
+}
+
+.gis_icon_area .mobile_icon.type_past_video.active:hover {
+  background: url("../../images/dark/page/icon/gis/icon_mobile_pastVideo_active.png") no-repeat;
+}
+
+
+.gis_icon_area .gis_icon.cluster_icon {
+  background: url("../../images/dark/page/icon/gis/icon_cctvClustering_normal.png") no-repeat;
+}
+
+.gis_icon_area .gis_icon.cluster_icon:hover {
+  background: url("../../images/dark/page/icon/gis/icon_cctvClustering_hover.png") no-repeat;
+}
+
+.gis_icon_area .gis_icon.cluster_icon.active {
+  background: url("../../images/dark/page/icon/gis/icon_cctvClustering_active.png") no-repeat;
+}
+
+.gis_icon_area .gis_icon.cluster_icon .count_number {
+  width: auto;
+  height: 21px;
+  border-radius: 10.5px;
+  -webkit-box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.24);
+  border: solid 1px #e1e2e3;
+  background-color: #2a2a3d;
+  font-family: "NotoSansCJKB";
+  font-size: 12px;
+  color: #f7f7f7;
+  line-height: 1.5;
+  padding: 0 7px;
+  position: absolute;
+  top: -9px;
+  left: 26px;
+  z-index: 1;
+}
+
+
+.gis_icon_area .mobile_icon .location_icon {
+  bottom: 42px;
+  left: 16px;
+}
+
+.gis_icon_area .loc_1 {
+  top: 483px;
+  left: 843px;
+}
+
+.gis_icon_area .loc_2 {
+  top: 468px;
+  left: 995px;
+}
+
+.gis_icon_area .loc_3 {
+  top: 593px;
+  left: 893px;
+}
+
+.gis_icon_area .loc_4 {
+  top: 526px;
+  left: 1058px;
+}
+
+.gis_icon_area .loc_5 {
+  top: 593px;
+  left: 893px;
+}
+
+.gis_icon_area .loc_6 {
+  top: 600px;
+  left: 1019px;
+}
+
+.gis_icon_area .loc_7 {
+  top: 159px;
+  left: 1098px;
+}
+
+.gis_icon_area .loc_8 {
+  top: 159px;
+  left: 1198px;
+}
+
+.gis_icon_area .loc_9 {
+  top: 276px;
+  left: 1059px;
+}
+
+.gis_icon_area .loc_10 {
+  top: 152px;
+  left: 546px;
+}
+
+.gis_icon_area .loc_11 {
+  top: 380px;
+  left: 546px;
+}
+
+.gis_icon_area .loc_01 {
+  top: 462px;
+  left: 809px;
+}
+
+.gis_icon_area .loc_02 {
+  top: 446.5px;
+  left: 961px;
+}
+
+.gis_icon_area .loc_03 {
+  top: 572px;
+  left: 859px;
+}
+
+.gis_icon_area .loc_04 {
+  top: 505px;
+  left: 1024px;
+}
+
+.gis_icon_area .loc_05 {
+  top: 572px;
+  left: 859px;
+}
+
+.gis_icon_area .loc_06 {
+  top: 579px;
+  left: 985px;
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "clfyNm" : "재난대응광역카메라",
+    "clfyId" : "FCC_disasterActionCamera",
+    "cctvCnt" : 6,
+    "cctvList" : [
+      {
+        "facId" : "CTV00002643",
+        "facNm" : "마도면행정복지센터",
+        "addr" : "경기도 화성시 마도면 석교리 243-2",
+        "lat": 37.20547372,
+        "lng" : 126.76963366,
+        "clfyCd" : "FCC_disasterActionCamera",
+        "clfyNm" : "재난대응광역카메라",
+        "useYn" : 1,
+        "data" : null,
+        "mgtNo" : "CTV00002643",
+        "ptzYn" : false
+      },
+      {
+        "facId" : "CTV00008923",
+        "facNm" : "장안면행정복지센터",
+        "addr" : "경기도 화성시 장안면 사랑리 138-14",
+        "lat" : 37.07976538,
+        "lng" : 126.83132783,
+        "clfyCd" : "FCC_disasterActionCamera",
+        "clfyNm" : "재난대응광역카메라",
+        "useYn" : 1,
+        "data" : null,
+        "mgtNo" : "CTV00008923",
+        "ptzYn" : false
+      },
+      {
+        "facId" : "CTV00010430",
+        "facNm" : "팔탄면행정복지센터",
+        "addr" : "경기 화성시 팔탄면 구장리 564-9",
+        "lat" : 37.16226474,
+        "lng" : 126.90485259,
+        "clfyCd" : "FCC_disasterActionCamera",
+        "clfyNm" : "재난대응광역카메라",
+        "useYn" : 1,
+        "data" :null,
+        "mgtNo" : "CTV00010430",
+        "ptzYn" : false
+      },
+      {
+        "facId" : "CTV00007338",
+        "facNm" : "양감행정복지센터",
+        "addr" : "경기 화성시 양감면 신왕리 1994",
+        "lat" : 37.08156230,
+        "lng" : 126.94549606,
+        "clfyCd" : "FCC_disasterActionCamera",
+        "clfyNm" : "재난대응광역카메라",
+        "useYn" : 1,
+        "data" :null,
+        "mgtNo" : "CTV00007338",
+        "ptzYn" : false
+      },
+      {
+        "facId" : "CTV00005370",
+        "facNm" : "서신행정복지센터",
+        "addr" : "경기 화성시 서신면 매화리 277",
+        "lat" : 37.166657102,
+        "lng" : 126.70873332,
+        "clfyCd" : "FCC_disasterActionCamera",
+        "clfyNm" : "재난대응광역카메라",
+        "useYn" : 1,
+        "data" :null,
+        "mgtNo" : "CTV00005370",
+        "ptzYn" : false
+      },
+      {
+        "facId" : "CTV00002750",
+        "facNm" : "매송행정복지센터",
+        "addr" : "경기 화성시 매송면 어천리 380",
+        "lat" : 37.25233530,
+        "lng" : 126.90911517,
+        "clfyCd" : "FCC_disasterActionCamera",
+        "clfyNm" : "재난대응광역카메라",
+        "useYn" : 1,
+        "data" :null,
+        "mgtNo" : "CTV00002750",
+        "ptzYn" : false
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+#%RAML 1.0
+title: Solbitech API RAML Document
+version: 0.2
+protocols: [HTTP]
+mediaType: application/json
+baseUri: http://{domain}:{port}/api/solbitech
+baseUriParameters:
+  domain:
+    type : string
+    description: API 서버가 설치된 도메인
+  port:
+    type : integer
+    description: API 서버 접속 포트(80인 경우 생략)
+description: 솔비텍 API 문서
+
+types:
+  report:
+    type: object
+    displayName: 보고서
+    description: 보고서
+    required: false
+    properties:
+      title:
+        type: string
+        description: 보고서 제목
+        required: false
+      damdang:
+        type: string
+        description: 담당 부서
+        required: false
+      writer:
+        type: string
+        description: 등록자 명
+        required: false
+      date:
+        type: string
+        description: 등록 일
+        required: false
+      content:
+        type: string
+        description: 보고서 내용
+        required: false
+      detail:
+        type: string
+        description: 보고서 내용
+        required: false
+      reportId:
+        type: string
+        description: 보고서 아이디
+        required: false
+
+#보고서
+/reports:
+  description: 보고서
+  /{reportId}:
+    uriParameters:
+      reportId:
+       type: string
+       description: 보고서 아이디
+       example: "report_6usZO3IXkl68HzEhLZd-RZ"
+    /solbitech:
+      get:
+        description: 보고서 요청
+        responses:
+          200:
+            description: 정상적으로 보고서가 요청됐을 경우
+            body:
+              application/json:
+                type: report
+                example: !include ../raml/example/report/get_solbitech.json

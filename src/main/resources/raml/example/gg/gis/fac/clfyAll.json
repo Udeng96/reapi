@@ -1,0 +1,50 @@
+[
+  {
+    "locationCd": "지자체 식별값",
+    "locationNm" : "지자체 명칭",
+    "id" : null,
+    "nm" : null,
+    "gisNormalIconUrl": null,
+    "gisHoverIconUrl" : null,
+    "gisActiveIconUrl" : null,
+    "clfyList": [
+      {
+        "id" : "분류 식별값",
+        "nm" : "분류 명칭",
+        "gisNormalIconUrl" : "fms icon 이미지 요청 url",
+        "gisHoverIconUrl" : "fms icon 이미지 요청 url",
+        "gisActiveIconUrl" : "fms icon 이미지 요청 url"
+      },{
+        "id" : "분류 식별값",
+        "nm" : "분류 명칭",
+        "gisNormalIconUrl" : "fms icon 이미지 요청 url",
+        "gisHoverIconUrl" : "fms icon 이미지 요청 url",
+        "gisActiveIconUrl" : "fms icon 이미지 요청 url"
+      }
+    ]
+  },
+  {
+    "locationCd": "지자체 식별값",
+    "locationNm" : "지자체 명칭",
+    "id" : null,
+    "nm" : null,
+    "gisNormalIconUrl": null,
+    "gisHoverIconUrl" : null,
+    "gisActiveIconUrl" : null,
+    "clfyList": [
+      {
+        "id" : "분류 식별값",
+        "nm" : "분류 명칭",
+        "gisNormalIconUrl" : "fms icon 이미지 요청 url",
+        "gisHoverIconUrl" : "fms icon 이미지 요청 url",
+        "gisActiveIconUrl" : "fms icon 이미지 요청 url"
+      },{
+        "id" : "분류 식별값",
+        "nm" : "분류 명칭",
+        "gisNormalIconUrl" : "fms icon 이미지 요청 url",
+        "gisHoverIconUrl" : "fms icon 이미지 요청 url",
+        "gisActiveIconUrl" : "fms icon 이미지 요청 url"
+      }
+    ]
+  }
+]

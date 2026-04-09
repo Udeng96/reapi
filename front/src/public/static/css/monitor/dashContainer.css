@@ -1,0 +1,232 @@
+/*dashContainer style*/
+.monitor.dash_container {
+  width: 256px;
+  height: 1080px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#171821), color-stop(54%, #191a25), to(#1c1d29));
+  background-image: linear-gradient(to top, #171821, #191a25 54%, #1c1d29);
+  border-right: 1px solid rgba(182, 182, 191, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 119.7px 20px 0 34px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  z-index: 1;
+}
+
+.monitor.dash_container .btn_hide {
+  width: 29px;
+  height: 29px;
+  background: url("../../images/dark/page/btn/monitor/btn_hide_arrow_normal.png") no-repeat;
+  position: absolute;
+  top: 76px;
+  left: 31px;
+}
+
+.monitor.dash_container .btn_hide:hover {
+  background: url("../../images/dark/page/btn/monitor/btn_hide_arrow_hover.png") no-repeat;
+}
+
+.monitor.dash_container .btn_hide:active {
+  background: url("../../images/dark/page/btn/monitor/btn_hide_arrow_click.png") no-repeat;
+}
+
+.monitor.dash_container .btn_open {
+  width: 27px;
+  height: 45px;
+  background: url("../../images/dark/page/btn/monitor/btn_slide_open_normal.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  right: -27px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+
+.monitor.dash_container .btn_open:hover {
+  background: url("../../images/dark/page/btn/monitor/btn_slide_open_hover.png") no-repeat;
+}
+
+.monitor.dash_container .btn_open:active {
+  background: url("../../images/dark/page/btn/monitor/btn_slide_open_click.png") no-repeat;
+}
+
+.monitor.dash_container .dash_frame {
+  width: 100%;
+  height: auto;
+}
+
+.monitor.dash_container .dash_frame .dash_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 19px;
+  font-family: "NotoSansCJKR";
+  font-size: 13px;
+  letter-spacing: 0.33px;
+  color: #c7c8c9;
+  position: relative;
+  margin-bottom: 12.3px;
+}
+
+.monitor.dash_container .dash_frame .dash_title::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #ff6f26;
+  margin-right: 6px;
+}
+
+.monitor.dash_container .dash_frame .select_area {
+  width: 202px;
+  height: 38px;
+  margin-bottom: 10px;
+}
+
+.monitor.dash_container .dash_frame .btn_apply {
+  width: 202px;
+  height: 36px;
+  border-radius: 5px;
+  border: solid 1px #fb6422;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f05f22), to(#ed8b13));
+  background-image: linear-gradient(to right, #f05f22, #ed8b13);
+  text-align: left;
+  padding-left: 97.4px;
+  font-family: "NotoSansCJKM";
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 34.7px;
+}
+
+.monitor.dash_container .dash_frame .btn_apply::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url("../../images/dark/page/icon/monitor/icon_btn_apply.png") no-repeat;
+  position: absolute;
+  top: 11px;
+  left: 79px;
+}
+
+.monitor.dash_container .dash_frame .btn_apply:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff7926), to(#ffab19));
+  background-image: linear-gradient(to right, #ff7926, #ffab19);
+}
+
+.monitor.dash_container .dash_frame .btn_apply.dimmed {
+  background-image: none;
+  border: solid 1px #464958;
+  background-color: #30323d;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.monitor.dash_container .dash_frame .btn_apply.dimmed::before {
+  opacity: 0.5;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area {
+  width: 100%;
+  height: 102px;
+  border-top: 1px solid #494b57;
+  border-bottom: 1px solid #494b57;
+  padding-top: 8.5px;
+  margin-bottom: 23px;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_hint {
+  font-family: "NotoSansCJKL";
+  font-size: 9px;
+  letter-spacing: 0.23px;
+  color: #ad7b42;
+  padding-left: 9px;
+  margin-bottom: 15.5px;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box {
+  width: 202px;
+  height: 38px;
+  position: relative;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .search_input {
+  width: 202px;
+  height: 38px;
+  border-radius: 6px;
+  border: solid 1px #30323d;
+  background-color: #0e0e17;
+  font-family: "NotoSansCJKR";
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #fff;
+  padding: 0 35px 0 15px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .search_input:hover {
+  border-color: #444757;
+  background-color: #1d1e2b;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .search_input:focus {
+  border-color: #ff6f26;
+  background-color: #08080d;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .search_input::-webkit-input-placeholder {
+  /* Edge */
+  font-family: "NotoSansCJKL";
+  color: #9698a3;
+  font-size: 12px;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .search_input::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "NotoSansCJKL";
+  color: #9698a3;
+  font-size: 12px;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .search_input:-ms-input-placeholder {
+  font-family: "NotoSansCJKL";
+  color: #9698a3;
+  font-size: 12px;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .search_input::placeholder {
+  font-family: "NotoSansCJKL";
+  color: #9698a3;
+  font-size: 12px;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .btn_search {
+  width: 28px;
+  height: 28px;
+  background: url("../../images/dark/page/btn/monitor/btn_gis_searchBar_magnifier_normal.png") no-repeat;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.monitor.dash_container .dash_frame .cctv_search_area .search_box .btn_search:hover {
+  background: url("../../images/dark/page/btn/monitor/btn_gis_searchBar_magnifier_hover.png") no-repeat;
+}
+
+.monitor.dash_container .dash_frame .tree_area {
+  width: 100%;
+  height: 620px;
+  overflow-y: scroll;
+}
+
+.monitor.dash_container .dash_frame .tree_area .tree_in {
+  width: 191px;
+}

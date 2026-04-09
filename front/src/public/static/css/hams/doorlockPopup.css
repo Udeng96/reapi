@@ -1,0 +1,91 @@
+/*doorlockPopup style*/
+.hams.modal_popup.doorlock_popup .modal_popup_frame {
+  width: 504px;
+  height: 278px;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body {
+  padding-top: 70.5px;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .lock_img {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -45px;
+  left: 181px;
+  z-index: 2;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .lock_img.state_lock {
+  background: url("../../images/dark/page/icon/hams/lock_lock_apng.png") no-repeat;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .lock_img.state_unlock {
+  background: url("../../images/dark/page/icon/hams/lock_unlock_apng.png") no-repeat;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .lock_message {
+  width: 100%;
+  font-family: "NotoSansCJKR";
+  font-size: 16px;
+  color: #c9cbd6;
+  text-align: center;
+  margin-bottom: 21.5px;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .lock_message span {
+  font-family: "NotoSansCJKM";
+  margin: 0 2px 0 4px;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .lock_message span.tBlue {
+  color: #627afc;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .lock_message span.tRed {
+  color: #f06969;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .btn_lock_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  height: 42px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .btn_lock_group .btn_lock {
+  width: 96px;
+  height: 42px;
+  border-radius: 21px;
+  border: solid 1px #4f5163;
+  background-color: #21232e;
+  font-family: "NotoSansCJKM";
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
+  font-size: 14px;
+  color: #e1e2e3;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .btn_lock_group .btn_lock:hover {
+  border-color: #4f5163;
+  background-color: #2b2d3a;
+  color: #fff;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .btn_lock_group .btn_lock:active {
+  border-color: #cf5717;
+  background-color: #1a1b26;
+  color: #ff6f26;
+}
+
+.hams.modal_popup.doorlock_popup .modal_popup_frame .modal_popup_body .btn_lock_group .btn_lock.dimmed {
+  border-color: #323442;
+  background-color: #1d1e2a;
+  color: #555869;
+}
