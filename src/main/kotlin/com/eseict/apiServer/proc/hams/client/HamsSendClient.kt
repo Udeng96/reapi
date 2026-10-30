@@ -29,15 +29,15 @@ import java.nio.charset.Charset
  */
 class HamsSendClient() {
 
-    var host: String = "192.168.0.55"
+    var host: String = "198.51.100.7"
 
     var port: String = "25170"
 
-    val id: String = "admin"
+    val id: String = System.getenv("HAMS_ID") ?: ""
 
-    val pw: String = "1"
+    val pw: String = System.getenv("HAMS_PW") ?: ""
 
-    val cryptKey: String = "GoodLinkAESKey&&"
+    val cryptKey: String = System.getenv("HAMS_CRYPT_KEY") ?: ""
 
     val isUseCrypt: String = "true"
 
@@ -91,6 +91,10 @@ class HamsSendClient() {
      * client 생성
      */
     fun doConnect(): Boolean {
+        // Real device connections require explicit opt-in and external credentials.
+        if (System.getenv("HAMS_TCP_ENABLED") != "true" || id.isBlank() || pw.isBlank()
+            || (isUseCrypt.toBoolean() && cryptKey.isBlank())) return false
+
 
         if (this.client != null){
             return true

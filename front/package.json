@@ -115,8 +115,10 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "build": "pnpm run typecheck && pnpm -r --if-present --filter \"./packages/**\" run build",
+    "test": "node scripts/test.js",
+    "build:legacy": "node scripts/build.js",
+    "typecheck": "pnpm --filter @reapi/shared build && pnpm -r --if-present --filter \"./packages/**\" run typecheck"
   },
   "browserslist": [
     ">0.2%",

@@ -16,9 +16,6 @@ subprojects {
     }
 
     repositories {
-        maven { url 'http://210.97.42.250:5001/repository/public/' ; allowInsecureProtocol = true }
-        maven { url 'http://210.97.42.250:5001/repository/maven-central/' ; allowInsecureProtocol = true }
-        maven { url 'http://210.97.42.250:5001/repository/maven-public/' ; allowInsecureProtocol = true }
         mavenCentral()
     }
 

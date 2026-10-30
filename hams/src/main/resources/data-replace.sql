@@ -1,34 +1,16 @@
--- ============================================================
--- hams 장비/그룹 데이터 교체 스크립트
--- 실행 전 반드시 백업 권장
--- ============================================================
-
-SET FOREIGN_KEY_CHECKS = 0;
-
-TRUNCATE TABLE tb_equipment_data;
-TRUNCATE TABLE tb_group_data;
-
-SET FOREIGN_KEY_CHECKS = 1;
-
--- ── 그룹 데이터 ───────────────────────────────────────────────
+-- Synthetic LOCAL DEMO data only. Never run against production.
+-- Existing table schema is required; this script does not erase tables.
 INSERT INTO tb_group_data (id, parent, name, usable, created_date, modified_date) VALUES
-(1, NULL, '동탄1', 'Y', NOW(), NOW()),
-(2, NULL, '동탄2', 'Y', NOW(), NOW()),
-(3, NULL, '향남',  'Y', NOW(), NOW()),
-(4, NULL, '남양',  'Y', NOW(), NOW()),
-(5, NULL, '봉담',  'Y', NOW(), NOW()),
-(6, NULL, '서신',  'Y', NOW(), NOW());
-
--- ── 장비 데이터 ───────────────────────────────────────────────
--- id = hamsId 숫자 (HAMS_N → N)
+(1, NULL, 'Example group 1', 'Y', NOW(), NOW()),
+(2, NULL, 'Example group 2', 'Y', NOW(), NOW()),
+(3, NULL, 'Example group 3', 'Y', NOW(), NOW()),
+(4, NULL, 'Example group 4', 'Y', NOW(), NOW()),
+(5, NULL, 'Example group 5', 'Y', NOW(), NOW()),
+(6, NULL, 'Example group 6', 'Y', NOW(), NOW());
 INSERT INTO tb_equipment_data (id, name, latitude, longitude, ip, port, jibun_address, roadname_address, extra_address, group_id, usable, setup_date, modified_date) VALUES
-(1,  'BBS#1',            37.2100465298114,  127.058111625558,  '10.10.10.227',  3000, '경기 화성시 능동 1120',              NULL, NULL, 1, 'Y', NOW(), NOW()),
-(2,  'BBS#2',            37.1993128866713,  127.054427406850,  '10.20.10.227',  3000, '경기 화성시 능동 1150-1',            NULL, NULL, 1, 'Y', NOW(), NOW()),
-(3,  'BBS#3',            37.2098820633291,  127.077238773900,  '10.40.10.229',  3000, '경기 화성시 석우동 50',              NULL, NULL, 1, 'Y', NOW(), NOW()),
-(4,  '동탄2지구-1국사',   37.208988126473,   127.106620013339,  '10.80.20.227',  3000, '경기 화성시 영천동 667-6',           NULL, NULL, 2, 'Y', NOW(), NOW()),
-(5,  '동탄2지구-2국사',   37.1946782568312,  127.084634282355,  '10.81.20.227',  3000, '경기 화성시 오산동 559-1',           NULL, NULL, 2, 'Y', NOW(), NOW()),
-(6,  '동탄2지구-3국사',   37.170177101365,   127.107776658853,  '10.82.20.227',  3000, '경기 화성시 산척동 231-24',          NULL, NULL, 2, 'Y', NOW(), NOW()),
-(7,  '향남2지구',         37.1120884,        126.911244100000,  '20.11.16.227',  3000, '경기도 화성시 향남읍 하길리 251',    NULL, NULL, 3, 'Y', NOW(), NOW()),
-(8,  '남양국사',          37.1998600,        126.829610000000,  '30.10.60.229',  3000, '경기도 화성시 남양읍 남양리 1628-8', NULL, NULL, 4, 'Y', NOW(), NOW()),
-(9,  '봉담국사(비봉,태안)', 37.2231800,      126.944370000000,  '70.11.9.227',   3000, '경기도 봉담읍 상리45-8 (매봉로 415)', NULL, NULL, 5, 'Y', NOW(), NOW()),
-(10, '전곡산단',          37.1877495101567,  126.666612852017,  '100.1.15.227',  3000, '경기 화성시 서신면 장외리 642',      NULL, NULL, 6, 'Y', NOW(), NOW());
+(1, 'Example facility 1', 0.0, 0.0, '203.0.113.1', 3000, 'Example address', NULL, NULL, 1, 'Y', NOW(), NOW()),
+(2, 'Example facility 2', 0.0, 0.0, '203.0.113.2', 3000, 'Example address', NULL, NULL, 2, 'Y', NOW(), NOW()),
+(3, 'Example facility 3', 0.0, 0.0, '203.0.113.3', 3000, 'Example address', NULL, NULL, 3, 'Y', NOW(), NOW()),
+(4, 'Example facility 4', 0.0, 0.0, '203.0.113.4', 3000, 'Example address', NULL, NULL, 4, 'Y', NOW(), NOW()),
+(5, 'Example facility 5', 0.0, 0.0, '203.0.113.5', 3000, 'Example address', NULL, NULL, 5, 'Y', NOW(), NOW()),
+(6, 'Example facility 6', 0.0, 0.0, '203.0.113.6', 3000, 'Example address', NULL, NULL, 6, 'Y', NOW(), NOW());

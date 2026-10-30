@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "hams")
 public class HamsProperties {
 
-    private String address = "192.168.0.55";
+    private String address = "198.51.100.7";
     private int port = 25170;
-    private String id = "admin";
-    private String pw = "1";
-    private String cryptKey = "GoodLinkAESKey&&";
+    private String id = "";
+    private String pw = "";
+    private String cryptKey = "";
     private String isUseCrypt = "true";
 
     /** 장비 → BE 방향 DOE 이벤트 수신 포트 (Netty TCP 서버) */
@@ -30,6 +30,6 @@ public class HamsProperties {
     @Getter
     @Setter
     public static class Tcp {
-        private boolean enabled = true;
+        private boolean enabled = false;
     }
 }

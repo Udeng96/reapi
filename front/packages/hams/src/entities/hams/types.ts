@@ -25,10 +25,10 @@ export interface HamsCctvInfo {
 }
 
 export interface HamsFacStatus {
-  frontDoor: string;
-  frontDoorLock: string;
-  backDoor: string;
-  backDoorLock: string;
+  frontDoor: string | null;
+  frontDoorLock: string | null;
+  backDoor: string | null;
+  backDoorLock: string | null;
   temp: number;
   humi: number;
   isConnect: boolean;
